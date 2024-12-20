@@ -117,11 +117,11 @@
         @include desktop {
           flex: 0 0 calc(50% - 38px / 2);
         }
-  
+
         @include desktopsm {
           flex: 0 0 calc(50% - 26px / 2);
         }
-  
+
         @include laptop {
           flex: 1 1 100%;
         }
@@ -150,8 +150,13 @@
         }
 
         &-text {
+          font-size: 16px;
           line-height: 160%;
           color: #242424;
+
+          @include desktopsm {
+            font-size: 14px;
+          }
 
           & a {
             color: #242424;
@@ -186,22 +191,21 @@
         @include desktop {
           width: 24px;
         }
-  
+
         @include desktopsm {
           width: 19px;
         }
-  
+
         @include laptop {
           width: 24px;
         }
 
         &_whatsapp {
           background-image: url(../images/whatsapp.svg);
-        } 
+        }
 
         &_inst {
           background-image: url(../images/instagram.svg);
-
         }
       }
     }
