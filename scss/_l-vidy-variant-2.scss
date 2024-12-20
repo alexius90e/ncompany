@@ -94,8 +94,10 @@
 
   &__content {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 40px;
+  
 
     @include desktop {
       gap: 34px;
@@ -108,40 +110,62 @@
     @include laptop {
       gap: 20px;
     }
+
+    @include tablet {
+      flex-direction: row;
+      max-height: none !important;
+    }
   }
 
   &__card {
     display: flex;
     align-items: center;
     gap: 29px;
-    flex: 0 0 calc(50% - 40px / 2);
+    max-width: calc(50% - 40px / 2);
     padding: 19px;
     box-sizing: border-box;
     border-radius: 3px;
     background-color: #f4fafc;
-    background-color: #06baf6;
 
     @include desktop {
-      flex: 0 0 calc(50% - 34px / 2);
+      max-width: calc(50% - 34px / 2);
+      width: 100%;
       padding: 16px;
     }
 
     @include desktopsm {
-      flex: 0 0 calc(50% - 21px / 2);
+      max-width: calc(50% - 21px / 2);
       padding: 22px 16px;
     }
 
     @include laptop {
-      flex: 0 0 calc(50% - 20px / 2);
+      max-width: calc(50% - 20px / 2);
       padding: 29px 17px;
     }
 
     @include tablet {
+      max-width: none;
       flex: 0 0 100%;
     }
 
     @include mobile {
       padding: 29px 15px;
+    }
+
+    &:nth-child(odd) {
+      order: 0;
+
+      @include tablet {
+        order: 0;
+      }
+    }
+
+    &:nth-child(even) {
+      order: 1;
+
+      @include tablet {
+        order: 0;
+      }
     }
 
     &-figure {
