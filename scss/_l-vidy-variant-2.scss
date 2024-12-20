@@ -1,0 +1,234 @@
+.vidy-variant-2 {
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 30px;
+
+    @include desktop {
+      margin: 0 0 26px;
+    }
+
+    @include desktopsm {
+      margin: 0 0 24px;
+    }
+
+    @include laptop {
+      margin: 0 0 22px;
+    }
+
+    @include mobile {
+      margin: 0 0 20px;
+    }
+
+    & .btn_green {
+      flex: 0 0 auto;
+      margin: 0;
+      color: var(--color-siniy, #355ddb);
+      border-color: var(--color-siniy, #355ddb);
+      background-color: var(--color-belyy, #fcfcfc);
+      transform: translateY(9px);
+
+      @include desktopsm {
+        transform: translateY(4px);
+      }
+
+      @include laptop {
+      }
+      transform: translateY(0px);
+
+      @include tablet {
+        display: none;
+      }
+
+      &:hover {
+        color: var(--color-belyy, #fcfcfc);
+        background-color: var(--color-siniy, #355ddb);
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+
+    &.h1:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__description {
+    max-width: 992px;
+    margin: 0 0 60px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    color: #0e0e0e;
+
+    @include desktop {
+      max-width: 903px;
+      margin: 0 0 54px;
+      font-size: 20px;
+    }
+
+    @include desktopsm {
+      max-width: 696px;
+      margin: 0 0 48px;
+      font-size: 18px;
+    }
+
+    @include laptop {
+      max-width: 519px;
+      margin: 0 0 44px;
+      font-size: 16px;
+    }
+
+    @include mobile {
+      max-width: none;
+      margin: 0 0 34px;
+    }
+
+    & b {
+      font-weight: 700;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+  
+
+    @include desktop {
+      gap: 34px;
+    }
+
+    @include desktopsm {
+      gap: 21px;
+    }
+
+    @include laptop {
+      gap: 20px;
+    }
+
+    @include tablet {
+      flex-direction: row;
+      max-height: none !important;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    max-width: calc(50% - 40px / 2);
+    padding: 19px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #f4fafc;
+
+    @include desktop {
+      max-width: calc(50% - 34px / 2);
+      width: 100%;
+      padding: 16px;
+    }
+
+    @include desktopsm {
+      max-width: calc(50% - 21px / 2);
+      padding: 22px 16px;
+    }
+
+    @include laptop {
+      max-width: calc(50% - 20px / 2);
+      padding: 29px 17px;
+    }
+
+    @include tablet {
+      max-width: none;
+      flex: 0 0 100%;
+    }
+
+    @include mobile {
+      padding: 29px 15px;
+    }
+
+    &:nth-child(odd) {
+      order: 0;
+
+      @include tablet {
+        order: 0;
+      }
+    }
+
+    &:nth-child(even) {
+      order: 1;
+
+      @include tablet {
+        order: 0;
+      }
+    }
+
+    &-figure {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      margin: 0;
+      width: 214px;
+
+      @include desktop {
+        width: 182px;
+      }
+
+      @include desktopsm {
+        width: 137px;
+      }
+
+      @include laptop {
+        width: 114px;
+      }
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      @include desktop {
+        gap: 12px;
+      }
+
+      @include laptop {
+        gap: 10px;
+      }
+
+      &-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #0e0e0e;
+
+        @include desktopsm {
+          font-size: 17px;
+        }
+      }
+
+      &-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #0e0e0e;
+
+        @include desktopsm {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
