@@ -366,4 +366,254 @@
       padding-bottom: 88px;
     }
   }
+
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #0e0e0e, $alpha: 0.15);
+
+    &-body {
+      max-height: calc(100dvh - 30px);
+      max-width: calc(100dvw - 30px);
+      width: 448px;
+      padding: 53px 42px;
+      box-sizing: border-box;
+      overflow: hidden;
+      border-radius: 3px;
+      background-color: #fefefe;
+
+      @include desktop {
+        width: 407px;
+        padding: 48px 39px;
+      }
+
+      @include desktopsm {
+        width: 340px;
+        padding: 40px 32px;
+      }
+
+      @include tablet {
+        width: 360px;
+        padding: 36px 31px;
+      }
+    }
+
+    &-title {
+      margin: 0 0 36px;
+      font-weight: 600;
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #000;
+
+      @include desktop {
+        margin: 0 0 32px;
+        font-size: 23px;
+      }
+
+      @include desktopsm {
+        margin: 0 0 28px;
+        font-size: 20px;
+      }
+    }
+
+    &-content {
+      max-height: calc(100vh - 203px);
+      overflow-y: auto;
+      scrollbar-color: #dddddd #f1f1f1;
+      scrollbar-width: 4px;
+
+      @include desktop {
+        max-height: calc(100dvh - 184px);
+      }
+
+      @include desktopsm {
+        max-height: calc(100dvh - 162px);
+      }
+
+      @include laptop {
+        max-height: calc(100dvh - 110px);
+      }
+
+      @include tablet {
+        max-height: calc(100dvh - 102px);
+      }
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      overflow: hidden;
+
+      @include desktop {
+        gap: 18px;
+      }
+
+      @include desktopsm {
+        gap: 16px;
+      }
+
+      @include tablet {
+        gap: 10px;
+      }
+
+      &-fieldset {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+
+      &-input,
+      &-textarea {
+        display: inline-block;
+        width: 100%;
+        padding: 14px 19px;
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 18px;
+        color: #0e0e0e;
+        border: 2px solid #c9c9c9;
+        border-radius: 3px;
+
+        @include desktop {
+          padding: 12px 17px;
+          font-size: 16px;
+        }
+
+        @include desktopsm {
+          padding: 10px 15px;
+          font-size: 15px;
+        }
+
+        @include laptop {
+          font-size: 14px;
+        }
+
+        @include tablet {
+          padding: 12px 18px;
+          font-size: 15px;
+        }
+
+        &::placeholder {
+          color: #7d7d7d;
+        }
+      }
+
+      &-input {
+        &:user-invalid {
+          border-color: #fe4343;
+        }
+      }
+
+      &-textarea {
+        min-height: 128px;
+        resize: none;
+
+        @include desktop {
+          min-height: 113px;
+        }
+
+        @include desktopsm {
+          min-height: 92px;
+        }
+
+        @include tablet {
+          min-height: 130px;
+        }
+      }
+
+      &-file {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &-input {
+          display: none;
+        }
+
+        &-text {
+          display: inline-block;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: 0.02em;
+          color: #355ddb;
+
+          @include desktop {
+            font-size: 16px;
+          }
+
+          @include tablet {
+            font-size: 18px;
+          }
+        }
+
+        &::after {
+          content: '';
+          display: block;
+          width: 20px;
+          aspect-ratio: 1 / 1;
+          background: url(../images/attachment.svg) center / cover no-repeat;
+
+          @include desktop {
+            width: 16px;
+          }
+
+          @include tablet {
+            width: 18px;
+          }
+        }
+      }
+
+      &-submit {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        padding: 16px 0 0;
+        border: none;
+
+        @include desktop {
+          padding: 14px 0 0;
+        }
+
+        @include desktopsm {
+          padding: 12px 0 0;
+        }
+
+        @include tablet {
+          padding: 14px 0 0;
+        }
+
+        & .btn_blue {
+          display: flex;
+          min-width: auto;
+          box-sizing: border-box;
+        }
+
+        &-agreement {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 110%;
+          color: #b3b3b3;
+
+          @include desktop {
+            font-size: 13px;
+          }
+
+          & a {
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+          }
+        }
+      }
+    }
+  }
 }
