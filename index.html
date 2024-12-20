@@ -5,186 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Контакты</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script type="module" src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
-    <section class="contacts-v-1">
+    <section class="vidy-variant-2">
       <div class="container">
-        <h1 class="h1">Контакты</h1>
-        <div class="contacts-v-1__description">Будем рады видеть вас в наших филиалах:</div>
+        <div class="vidy-variant-2__heading">
+          <h1 class="vidy-variant-2__title h1">Доборные элементы</h1>
 
-        <div class="contacts-v-1__branches">
-          <div class="contacts-v-1__branch">
-            <div class="contacts-v-1__branch-wrapper">
-              <h2 class="contacts-v-1__branch-title">Филиал в Краснодаре</h2>
+          <button class="btn_green mb_30" type="button">
+            Подробнее
+            <img
+              class="btn_arrow__default"
+              src="./images/general/arrow-btn-green.svg"
+              alt=""
+              width="14"
+              height="14"
+              decoding="async"
+            />
+            <img
+              class="btn_arrow__hover"
+              src="./images/general/arrow-btn-white.svg"
+              alt=""
+              width="14"
+              height="14"
+              decoding="async"
+            />
+          </button>
+        </div>
 
-              <div class="contacts-v-1__branch-content">
-                <div class="contacts-v-1__branch-content-block">
-                  <h3 class="contacts-v-1__branch-content-block-title">Телефон</h3>
+        <div class="vidy-variant-2__description">
+          Особое внимание при комплектации заказов уделяется доборным элементам и комплектующим. Они
+          являются завершением технологического процесса монтажных работ, а также выполняют
+          декоративные функции.
+          <b>У нас есть все необходимое для полной комплектации заказа в день обращения.</b>
+        </div>
 
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="medium">Отдел продаж:</span>
-                    <a class="regular" href="#">8 800 333-65-45</a>
-                  </div>
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="medium">Бухгалтерия: </span>
-                    <a class="regular" href="#">8 800 444-33-72</a>
-                  </div>
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="medium"> Отдел снабжения:</span>
-                    <a class="regular" href="#">8 800 444-33-72</a>
-                  </div>
-                </div>
+        <div class="vidy-variant-2__content grid">
+          <div class="vidy-variant-2__card grid-item">
+            <figure class="vidy-variant-2__card-figure">
+              <img class="vidy-variant-2__card-figure-image" src="./images/lenta.jpg" alt="lenta" />
+            </figure>
 
-                <div class="contacts-v-1__branch-content-block">
-                  <h3 class="contacts-v-1__branch-content-block-title">Почта</h3>
-
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <a class="regular" href="#">info@ttgrupp.ru</a>
-                  </div>
-                </div>
-
-                <div class="contacts-v-1__branch-content-block">
-                  <h3 class="contacts-v-1__branch-content-block-title">Адрес офиса</h3>
-
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="regular">г. Краснодар, ул. Евдокии Бершанской 349Е</span>
-                  </div>
-                </div>
-
-                <div class="contacts-v-1__branch-content-block">
-                  <h3 class="contacts-v-1__branch-content-block-title">Режим работы</h3>
-
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="regular">Пн-Пт: 9.00 -18.00 </span>
-                  </div>
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="regular">Сб-Вс: Выходной</span>
-                  </div>
-                </div>
-
-                <div class="contacts-v-1__branch-content-block">
-                  <h3 class="contacts-v-1__branch-content-block-title">Соцсети</h3>
-
-                  <div class="contacts-v-1__branch-social">
-                    <a
-                      class="contacts-v-1__branch-social-link contacts-v-1__branch-social-link_whatsapp"
-                      href=""
-                    ></a>
-                    <a
-                      class="contacts-v-1__branch-social-link contacts-v-1__branch-social-link_inst"
-                      href=""
-                    ></a>
-                    <a
-                      class="contacts-v-1__branch-social-link contacts-v-1__branch-social-link_whatsapp"
-                      href=""
-                    ></a>
-                    <a
-                      class="contacts-v-1__branch-social-link contacts-v-1__branch-social-link_inst"
-                      href=""
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="contacts-v-1__branch-map">
-              <iframe
-                src="https://yandex.by/map-widget/v1/?ll=39.131288%2C45.036152&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozNjk5Mjk0ODE0ElfQoNC-0YHRgdC40Y8sINCa0YDQsNGB0L3QvtC00LDRgCwg0YPQu9C40YbQsCDQldCy0LTQvtC60LjQuCDQkdC10YDRiNCw0L3RgdC60L7QuSwgMzQ50JUiCg1whhxCFQUlNEI%2C&z=16.67"
-                width="560"
-                height="400"
-                frameborder="0"
-                allowfullscreen="true"
-                style="position: relative"
-              ></iframe>
+            <div class="vidy-variant-2__card-info">
+              <div class="vidy-variant-2__card-info-title">Лента уплотнительная</div>
+              <div class="vidy-variant-2__card-info-text">3*30 (30м), 3*50 (30м)</div>
             </div>
           </div>
 
-          <div class="contacts-v-1__branch">
-            <div class="contacts-v-1__branch-wrapper">
-              <h2 class="contacts-v-1__branch-title">Филиал в Крыму</h2>
+          <div class="vidy-variant-2__card grid-item">
+            <figure class="vidy-variant-2__card-figure">
+              <img
+                class="vidy-variant-2__card-figure-image"
+                src="./images/uplotniteli.jpg"
+                alt="lenta"
+              />
+            </figure>
 
-              <div class="contacts-v-1__branch-content">
-                <div class="contacts-v-1__branch-content-block">
-                  <h3 class="contacts-v-1__branch-content-block-title">Телефон</h3>
-
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="medium">Отдел продаж:</span>
-                    <a class="regular" href="#">8 800 333-65-45</a>
-                  </div>
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="medium">Бухгалтерия: </span>
-                    <a class="regular" href="#">8 800 444-33-72</a>
-                  </div>
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="medium"> Отдел снабжения:</span>
-                    <a class="regular" href="#">8 800 444-33-72</a>
-                  </div>
-                </div>
-
-                <div class="contacts-v-1__branch-content-block">
-                  <h3 class="contacts-v-1__branch-content-block-title">Почта</h3>
-
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <a class="regular" href="#">info@ttgrupp.ru</a>
-                  </div>
-                </div>
-
-                <div class="contacts-v-1__branch-content-block">
-                  <h3 class="contacts-v-1__branch-content-block-title">Адрес офиса</h3>
-
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="regular">г. Краснодар, ул. Евдокии Бершанской 349Е</span>
-                  </div>
-                </div>
-
-                <div class="contacts-v-1__branch-content-block">
-                  <h3 class="contacts-v-1__branch-content-block-title">Режим работы</h3>
-
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="regular">Пн-Пт: 9.00 -18.00 </span>
-                  </div>
-                  <div class="contacts-v-1__branch-content-block-text">
-                    <span class="regular">Сб-Вс: Выходной</span>
-                  </div>
-                </div>
-
-                <div class="contacts-v-1__branch-content-block">
-                  <h3 class="contacts-v-1__branch-content-block-title">Соцсети</h3>
-
-                  <div class="contacts-v-1__branch-social">
-                    <a
-                      class="contacts-v-1__branch-social-link contacts-v-1__branch-social-link_whatsapp"
-                      href=""
-                    ></a>
-                    <a
-                      class="contacts-v-1__branch-social-link contacts-v-1__branch-social-link_inst"
-                      href=""
-                    ></a>
-                    <a
-                      class="contacts-v-1__branch-social-link contacts-v-1__branch-social-link_whatsapp"
-                      href=""
-                    ></a>
-                    <a
-                      class="contacts-v-1__branch-social-link contacts-v-1__branch-social-link_inst"
-                      href=""
-                    ></a>
-                  </div>
-                </div>
+            <div class="vidy-variant-2__card-info">
+              <div class="vidy-variant-2__card-info-title">Уплотнители</div>
+              <div class="vidy-variant-2__card-info-text">
+                СП-32-Ш, L=1м, СП-38-Ш, L=1м, СП-32-Ш, L=1м внутренний, СП-38-Ш, L=1м внутренний
               </div>
             </div>
+          </div>
 
-            <div class="contacts-v-1__branch-map">
-              <iframe
-                src="https://yandex.by/map-widget/v1/?ll=39.131288%2C45.036152&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozNjk5Mjk0ODE0ElfQoNC-0YHRgdC40Y8sINCa0YDQsNGB0L3QvtC00LDRgCwg0YPQu9C40YbQsCDQldCy0LTQvtC60LjQuCDQkdC10YDRiNCw0L3RgdC60L7QuSwgMzQ50JUiCg1whhxCFQUlNEI%2C&z=16.67"
-                width="560"
-                height="400"
-                frameborder="0"
-                allowfullscreen="true"
-                style="position: relative"
-              ></iframe>
+          <div class="vidy-variant-2__card grid-item">
+            <figure class="vidy-variant-2__card-figure">
+              <img class="vidy-variant-2__card-figure-image" src="./images/lenta.jpg" alt="lenta" />
+            </figure>
+
+            <div class="vidy-variant-2__card-info">
+              <div class="vidy-variant-2__card-info-title">Пистолеты</div>
+              <div class="vidy-variant-2__card-info-text">
+                для монтажной пены, для герметика закрытый для туб (600 мл)
+              </div>
+            </div>
+          </div>
+
+          <div class="vidy-variant-2__card grid-item">
+            <figure class="vidy-variant-2__card-figure">
+              <img
+                class="vidy-variant-2__card-figure-image"
+                src="./images/fasonnye.jpg"
+                alt="lenta"
+              />
+            </figure>
+
+            <div class="vidy-variant-2__card-info">
+              <div class="vidy-variant-2__card-info-title">Фасонные элементы</div>
+            </div>
+          </div>
+
+          <div class="vidy-variant-2__card grid-item">
+            <figure class="vidy-variant-2__card-figure">
+              <img
+                class="vidy-variant-2__card-figure-image"
+                src="./images/uplotniteli.jpg"
+                alt="lenta"
+              />
+            </figure>
+
+            <div class="vidy-variant-2__card-info">
+              <div class="vidy-variant-2__card-info-title">Пена монтажная</div>
+              <div class="vidy-variant-2__card-info-text">
+                огнеупорная профессиональная IRFIX B1, 750 мл, JETFIX 65 GREEN Пена профессиональная
+                всесезонная 800мл, JETFIX Очиститель монтажной пены 450мл
+              </div>
+            </div>
+          </div>
+
+          <div class="vidy-variant-2__card grid-item">
+            <figure class="vidy-variant-2__card-figure">
+              <img class="vidy-variant-2__card-figure-image" src="./images/lenta.jpg" alt="lenta" />
+            </figure>
+
+            <div class="vidy-variant-2__card-info">
+              <div class="vidy-variant-2__card-info-title">Замковый уплотнитель</div>
+              <div class="vidy-variant-2__card-info-text">d 4мм 10м; d 4мм 11м</div>
             </div>
           </div>
         </div>
