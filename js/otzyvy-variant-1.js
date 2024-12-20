@@ -24,3 +24,21 @@ function countVidyContentMaxHeight() {
 window.addEventListener('resize', () => countVidyContentMaxHeight());
 
 countVidyContentMaxHeight();
+
+const otzyvyModal = document.querySelector('.otzyvy-variant-1__modal');
+const otzyvyAddButton = document.querySelector('.otzyvy-variant-1__new-button');
+
+if (otzyvyAddButton && otzyvyModal) {
+  otzyvyAddButton.addEventListener('click', () => {
+    otzyvyModal.classList.add('active');
+  });
+
+  otzyvyModal.addEventListener('click', (event) => {
+    const isLayout = event.target === event.currentTarget;
+    const isClose = event.target.classList.contains('otzyvy-variant-1__modal-close');
+
+    if (isClose || isLayout) {
+      event.currentTarget.classList.remove('active');
+    }
+  });
+}

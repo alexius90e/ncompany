@@ -280,6 +280,8 @@
 
         <div class="otzyvy-variant-1__modal">
           <div class="otzyvy-variant-1__modal-body">
+            <div class="otzyvy-variant-1__modal-close" role="button"></div>
+
             <div class="otzyvy-variant-1__modal-title">Оставить отзыв</div>
 
             <div class="otzyvy-variant-1__modal-content">
@@ -288,6 +290,7 @@
                   <input
                     class="otzyvy-variant-1__modal-form-input"
                     type="text"
+                    name="name"
                     placeholder="Ваше имя"
                     required
                   />
@@ -297,6 +300,7 @@
                   <input
                     class="otzyvy-variant-1__modal-form-input"
                     type="tel"
+                    name="phone"
                     placeholder="Номер телефона"
                     required
                   />
@@ -305,6 +309,7 @@
                 <fieldset class="otzyvy-variant-1__modal-form-fieldset">
                   <input
                     class="otzyvy-variant-1__modal-form-input"
+                    name="email"
                     type="email"
                     placeholder="Email"
                   />
@@ -313,6 +318,7 @@
                 <fieldset class="otzyvy-variant-1__modal-form-fieldset">
                   <textarea
                     class="otzyvy-variant-1__modal-form-textarea"
+                    name="message"
                     placeholder="Введите ваше сообщение"
                   ></textarea>
                 </fieldset>
@@ -320,8 +326,30 @@
                 <fieldset class="otzyvy-variant-1__modal-form-fieldset">
                   <label class="otzyvy-variant-1__modal-form-file">
                     <span class="otzyvy-variant-1__modal-form-file-text">Добавить фото </span>
-                    <input class="otzyvy-variant-1__modal-form-file-input" type="file" />
+                    <input class="otzyvy-variant-1__modal-form-file-input" name="file" type="file" />
                   </label>
+                </fieldset>
+
+                <fieldset class="otzyvy-variant-1__modal-form-rating">
+                  <div class="otzyvy-variant-1__modal-form-rating-text">Ваша оценка</div>
+
+                  <div class="otzyvy-variant-1__modal-form-rating-count">
+                    <label class="otzyvy-variant-1__modal-form-rating-count-item">
+                      <input type="radio" name="rating" id="otzyvyRating1">
+                    </label>
+                    <label class="otzyvy-variant-1__modal-form-rating-count-item">
+                      <input type="radio" name="rating" id="otzyvyRating2">
+                    </label>
+                    <label class="otzyvy-variant-1__modal-form-rating-count-item">
+                      <input type="radio" name="rating" id="otzyvyRating3">
+                    </label>
+                    <label class="otzyvy-variant-1__modal-form-rating-count-item">
+                      <input type="radio" name="rating" id="otzyvyRating4">
+                    </label>
+                    <label class="otzyvy-variant-1__modal-form-rating-count-item">
+                      <input type="radio" name="rating" id="otzyvyRating5" checked>
+                    </label>
+                  </div>
                 </fieldset>
 
                 <fieldset class="otzyvy-variant-1__modal-form-submit">
