@@ -111,9 +111,6 @@
     gap: 20px;
   }
 }
-.vidy-variant-2 .grid-item {
-  width: 50%;
-}
 .vidy-variant-2__card {
   display: flex;
   align-items: center;
@@ -123,6 +120,7 @@
   box-sizing: border-box;
   border-radius: 3px;
   background-color: #f4fafc;
+  background-color: #06baf6;
 }
 @media (max-width: 1600px) {
   .vidy-variant-2__card {

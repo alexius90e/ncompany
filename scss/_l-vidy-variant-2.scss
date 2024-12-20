@@ -110,8 +110,6 @@
     }
   }
 
-  & .grid-item { width: 50%; } 
-
   &__card {
     display: flex;
     align-items: center;
@@ -121,7 +119,7 @@
     box-sizing: border-box;
     border-radius: 3px;
     background-color: #f4fafc;
-    // background-color: #06baf6;
+    background-color: #06baf6;
 
     @include desktop {
       flex: 0 0 calc(50% - 34px / 2);
