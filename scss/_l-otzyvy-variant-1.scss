@@ -98,6 +98,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 62px 60px;
+    max-width: 100%;
+    box-sizing: border-box;
 
     @include desktop {
       gap: 53px 51px;
@@ -162,7 +164,7 @@
 
     &-author {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 26px;
       margin: 0 0 26px;
 
@@ -278,6 +280,7 @@
       margin: 0 0 22px;
       font-weight: 400;
       font-size: 16px;
+      font-style: italic;
       line-height: 160%;
       color: #7d7d7d;
 
