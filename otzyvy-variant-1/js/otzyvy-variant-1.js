@@ -17,7 +17,7 @@ function countVidyContentMaxHeight() {
 
   if (container) {
     const gap = Number.parseInt(window.getComputedStyle(container).columnGap);
-    container.style.maxHeight = `${maxColumnHeight + maxColumnElemsCount * gap}px`;
+    container.style.maxHeight = `${maxColumnHeight + (maxColumnElemsCount +  1) * gap}px`;
   }
 }
 
