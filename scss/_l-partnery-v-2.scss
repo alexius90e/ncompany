@@ -141,6 +141,8 @@
     }
 
     & .swiper {
+      padding: 1px;
+
       &-slide {
         height: auto;
       }
@@ -155,6 +157,8 @@
         width: 40px;
         aspect-ratio: 1 / 1;
         background: url(../images/prev-button.svg) center / cover no-repeat;
+        transition: filter ease-in-out 0.2s;
+        cursor: pointer;
 
         @include desktop {
           width: 34px;
@@ -164,8 +168,8 @@
           width: 28px;
         }
 
-        &.swiper-button-disabled {
-          opacity: 0.5;
+        &:hover {
+          filter: brightness(50%);
         }
       }
 
@@ -188,9 +192,10 @@
 
     @include mobile {
       border-radius: 3px;
+      border-right: 1px solid #dddddd;
     }
 
-    &:last-child {
+    .swiper-slide:last-child & {
       border-right: 1px solid #dddddd;
     }
 
