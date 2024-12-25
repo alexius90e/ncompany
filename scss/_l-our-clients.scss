@@ -1,0 +1,123 @@
+.our-clients {
+  padding: 69px 0 102px;
+
+  @include tablet {
+    padding: 38px 0;
+  }
+
+  &__title {
+    margin: 0 0 43px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+
+    @include desktopsm {
+      font-size: 32px;
+    }
+
+    @include laptop {
+      font-size: 28px;
+    }
+
+    @include tablet {
+      margin: 0 0 30px;
+      font-size: 24px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+
+    &-wrapper {
+      max-width: 1240px;
+      padding: 0 60px;
+      margin: 0 auto;
+    }
+
+    & .swiper {
+      padding: 1px;
+
+      &-slide {
+        height: auto;
+        opacity: 0.4;
+        transition: opacity ease-in-out 0.4s;
+
+        &-active {
+          opacity: 1;
+        }
+      }
+    }
+
+    &-controls {
+      &-prev,
+      &-next {
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 42px;
+        aspect-ratio: 1 / 1;
+        background: url(../images/prev-button.svg) center / cover no-repeat;
+        transition: filter ease-in-out 0.2s;
+        cursor: pointer;
+
+        @include desktop {
+          width: 38px;
+        }
+
+        @include desktopsm {
+          width: 32px;
+        }
+
+        &:hover {
+          filter: brightness(50%);
+        }
+      }
+
+      &-prev {
+        left: 0;
+        transform: translate3d(0, -50%, 0);
+      }
+
+      &-next {
+        right: 0;
+        transform: translate3d(0, -50%, 0) rotate(180deg);
+      }
+    }
+  }
+
+  &__card {
+    border: 1px solid #dddddd;
+
+    &-logo {
+      margin: 0;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &-text {
+      min-height: 90px;
+      padding: 11px 20px;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      text-align: center;
+      color: #000;
+
+      @include laptop {
+        min-height: 60px;
+        padding: 8px 20px;
+        font-size: 15px;
+      }
+    }
+  }
+}
