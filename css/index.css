@@ -841,7 +841,7 @@
   align-items: center;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0);
-  transition: background-color ease-in-out 0.2s;
+  transition: background-color ease-in-out 0.4s;
   pointer-events: none;
 }
 .perv-ekr-v-6__modal-callback.active {
@@ -857,7 +857,7 @@
   border-radius: 3px;
   background-color: #fefefe;
   transform: translateY(-120dvh);
-  transition: transform ease-in-out 0.2s;
+  transition: transform ease-in-out 0.4s;
 }
 @media (max-width: 1600px) {
   .perv-ekr-v-6__modal-callback-body {
@@ -1082,4 +1082,166 @@
     width: 22px;
     height: 22px;
   }
+}
+.perv-ekr-v-6__modal-thanks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color ease-in-out 0.4s;
+  pointer-events: none;
+}
+.perv-ekr-v-6__modal-thanks.active {
+  background-color: rgba(0, 0, 0, 0.25);
+  pointer-events: all;
+}
+.perv-ekr-v-6__modal-thanks-body {
+  position: relative;
+  max-height: 96dvh;
+  max-width: 566px;
+  padding: 48px 38px 53px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #fefefe;
+  transform: translateY(-120dvh);
+  transition: transform ease-in-out 0.4s;
+}
+@media (max-width: 1600px) {
+  .perv-ekr-v-6__modal-thanks-body {
+    padding: 42px 34px 47px;
+    max-width: 504px;
+  }
+}
+@media (max-width: 1300px) {
+  .perv-ekr-v-6__modal-thanks-body {
+    max-width: 442px;
+    padding: 44px 30px 42px;
+  }
+}
+@media (max-width: 576px) {
+  .perv-ekr-v-6__modal-thanks-body {
+    max-width: calc(100dvw - 30px);
+    width: 360px;
+    padding: 38px 24px 31px;
+  }
+}
+.active .perv-ekr-v-6__modal-thanks-body {
+  transform: translateY(0);
+}
+.perv-ekr-v-6__modal-thanks-content {
+  max-height: calc(100dvh - 100px);
+  overflow: auto;
+}
+.perv-ekr-v-6__modal-thanks-title {
+  margin: 0 0 20px;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #0e0e0e;
+}
+@media (max-width: 1600px) {
+  .perv-ekr-v-6__modal-thanks-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1300px) {
+  .perv-ekr-v-6__modal-thanks-title {
+    margin: 0 0 16px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .perv-ekr-v-6__modal-thanks-title {
+    font-size: 18px;
+  }
+}
+.perv-ekr-v-6__modal-thanks-text {
+  margin: 0 0 12px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.03em;
+  color: #7d7d7d;
+}
+@media (max-width: 1600px) {
+  .perv-ekr-v-6__modal-thanks-text {
+    font-size: 10px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1300px) {
+  .perv-ekr-v-6__modal-thanks-text {
+    font-size: 14px;
+  }
+}
+.perv-ekr-v-6__modal-thanks-close {
+  position: absolute;
+  top: 48px;
+  right: 38px;
+  z-index: 5;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: none;
+  outline: none;
+  background: url(../images/perv-ekr-v-6/close.svg) center/cover no-repeat;
+  cursor: pointer;
+}
+@media (max-width: 1600px) {
+  .perv-ekr-v-6__modal-thanks-close {
+    top: 43px;
+    right: 34px;
+    width: 29px;
+    height: 29px;
+  }
+}
+@media (max-width: 1300px) {
+  .perv-ekr-v-6__modal-thanks-close {
+    top: 42px;
+    right: 30px;
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .perv-ekr-v-6__modal-thanks-close {
+    top: 34px;
+    right: 20px;
+  }
+}
+.perv-ekr-v-6__modal-thanks-callback {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 42px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 1600px) {
+  .perv-ekr-v-6__modal-thanks-callback {
+    margin-top: 37px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1300px) {
+  .perv-ekr-v-6__modal-thanks-callback {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+.perv-ekr-v-6__modal-thanks-callback-text {
+  color: #0e0e0e;
+}
+.perv-ekr-v-6__modal-thanks-callback-phone {
+  color: #1eb6e8;
 }
