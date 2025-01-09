@@ -1,0 +1,38 @@
+.kviz-v-1 {
+  &__aaa {
+    @include desktop {
+    }
+
+    @include desktopsm {
+    }
+
+    @include laptop {
+    }
+
+    @include mobile {
+    }
+  }
+
+  &__title {
+    margin: 0 0 60px;
+    text-align: center;
+    text-wrap: balance;
+
+    @include desktop {
+      margin: 0 0 54px;
+    }
+
+    @include desktopsm {
+      margin: 0 0 48px;
+    }
+
+    @include laptop {
+      margin: 0 0 44px;
+    }
+
+    @include mobile {
+      margin: 0 0 34px;
+      text-align: left;
+    }
+  }
+}
