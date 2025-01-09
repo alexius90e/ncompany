@@ -704,6 +704,11 @@
           padding: 4px 19px;
           font-size: 15px;
         }
+
+        
+        &:user-invalid {
+          border-color: #ff0000;
+        }
       }
 
       &-button {
@@ -830,8 +835,7 @@
     }
 
     &-content {
-      max-height: calc(100dvh - 100px);
-      overflow: auto;
+      max-height: calc(100dvh);
     }
 
     &-title {
@@ -947,6 +951,10 @@
         @include desktopsm {
           padding: 4px 13px;
           font-size: 15px;
+        }
+
+        &:user-invalid {
+          border-color: #ff0000;
         }
       }
 
@@ -1081,8 +1089,7 @@
     }
 
     &-content {
-      max-height: calc(100dvh - 100px);
-      overflow: auto;
+      max-height: calc(100dvh);
     }
 
     &-title {
