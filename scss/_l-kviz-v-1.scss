@@ -38,20 +38,20 @@
 
   &__quiz {
     position: relative;
-    padding: 80px 114px 91px;
+    padding: 80px 114px 100px;
     background-color: #f5f5f5;
     overflow: hidden;
 
     @include desktop {
-      padding: 60px 97px 80px;
+      padding: 60px 97px 92px;
     }
 
     @include desktopsm {
-      padding: 48px 78px 56px;
+      padding: 48px 78px 72px;
     }
 
     @include laptop {
-      padding: 48px 35px 41px;
+      padding: 48px 35px 72px;
     }
 
     @include mobile {
@@ -81,6 +81,11 @@
       }
 
       & .swiper {
+        &-wrapper {
+          @media screen and (min-width: 576px) {
+            height: 100% !important;
+          }
+        }
       }
     }
 
@@ -152,7 +157,7 @@
         margin-top: 34px;
 
         @include desktop {
-          padding: 21px 16px;
+          gap: 21px 16px;
           font-size: 15px;
         }
 
@@ -184,6 +189,7 @@
           line-height: 120%;
           color: #0e0e0e;
           background-color: #f5f5f5;
+          cursor: pointer;
 
           @include desktop {
             height: 41px;
@@ -199,6 +205,7 @@
 
           @include mobile {
             flex: 1 1 100%;
+            height: 38px;
           }
 
           &-input {
@@ -246,11 +253,11 @@
               font-size: 14px;
             }
 
-            &-input {
-              display: none;
+            @include mobile {
+              height: 38px;
             }
 
-            &:has(input:checked) {
+            &:user-valid {
               color: #ff6200;
               border-color: #ff6200;
             }
@@ -261,7 +268,26 @@
       &-form {
         display: flex;
         flex-direction: column;
-        margin: 34px 0 22px;
+        gap: 26px;
+        margin: 53px 0 22px;
+
+        @include desktop {
+          gap: 22px;
+          margin: 49px 0 19px;
+        }
+
+        @include desktopsm {
+          gap: 14px;
+          margin: 38px 0 11px;
+        }
+
+        @include laptop {
+          margin: 27px 0 11px;
+        }
+
+        @include mobile {
+          margin: 40px 0 11px;
+        }
 
         &-input,
         &-button {
@@ -283,7 +309,6 @@
         &-input {
           max-width: 522px;
           padding: 14px 19px;
-          margin: 0 0 26px;
           font-weight: 400;
           font-size: 18px;
           color: #7d7d7d;
@@ -293,14 +318,12 @@
 
           @include desktop {
             max-width: 445px;
-            margin: 0 0 22px;
             padding: 12px 16px;
             font-size: 16px;
           }
 
           @include desktopsm {
             max-width: 356px;
-            margin: 0 0 14px;
             padding: 10px 13px;
             font-size: 14px;
           }
@@ -316,7 +339,7 @@
 
         &-button {
           max-width: 400px;
-          margin: 53px 0 0;
+          margin: 27px 0 0;
           justify-content: center;
           padding: 4px 34px;
           font-weight: 600;
@@ -332,13 +355,13 @@
 
           @include desktop {
             max-width: 341px;
-            margin: 45px 0 0;
+            margin: 24px 0 0;
             padding: 15px 34px;
             font-size: 13px;
           }
 
           @include desktopsm {
-            margin: 32px 0 0;
+            margin: 17px 0 0;
             padding: 13px 34px;
             max-width: 304px;
           }
@@ -361,11 +384,15 @@
         max-width: 310px;
         font-weight: 400;
         font-size: 14px;
-        line-height: 110%;
+        line-height: 130%;
         color: #b3b3b3;
 
         @include desktop {
           font-size: 13px;
+        }
+
+        & > * {
+          line-height: 130%;
         }
 
         &-link {
@@ -467,6 +494,11 @@
       &-car {
         margin: 0;
 
+        @include mobile {
+          display: flex;
+          justify-content: flex-end;
+        }
+
         .reachend & {
           display: none;
         }
@@ -492,7 +524,10 @@
           }
 
           @include mobile {
+            max-width: none;
+            min-width: 515px;
             width: 100%;
+            aspect-ratio: 515 / 342;
             transform: none;
           }
 
