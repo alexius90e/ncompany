@@ -24,6 +24,7 @@
 }
 .ceo-video__info-title {
   margin: 0 0 36px;
+  font-weight: 600;
 }
 @media (max-width: 1600px) {
   .ceo-video__info-title {

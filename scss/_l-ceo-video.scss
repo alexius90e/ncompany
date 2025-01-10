@@ -1,18 +1,4 @@
 .ceo-video {
-  &__a {
-    @include desktop {
-    }
-
-    @include desktopsm {
-    }
-
-    @include laptop {
-    }
-
-    @include mobile {
-    }
-  }
-
   &__info {
     position: relative;
     padding-right: calc(780px + 64px);
@@ -35,6 +21,7 @@
 
     &-title {
       margin: 0 0 36px;
+      font-weight: 600;
 
       @include desktop {
         margin-bottom: 32px;
