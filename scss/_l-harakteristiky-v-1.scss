@@ -1,17 +1,4 @@
 .harakteristiky-v-1 {
-  &__aaa {
-    @include desktop {
-    }
-
-    @include desktopsm {
-    }
-
-    @include laptop {
-    }
-
-    @include mobile {
-    }
-  }
 
   &__heading {
     display: flex;
@@ -161,6 +148,7 @@
 
       & .swiper-button-prev,
       & .swiper-button-next {
+        position: absolute;
         flex: 0 0 auto;
         display: flex !important;
         align-items: center;
@@ -187,6 +175,16 @@
         @include mobile {
           width: 26px;
           height: 26px;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: -4px;
+          left: -4px;
+          right: -4px;
+          bottom: -4px;
+          z-index: 5;
         }
 
         &::after {

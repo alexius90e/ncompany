@@ -147,6 +147,7 @@
   }
 }
 .harakteristiky-v-1__slide-main .swiper-button-prev, .harakteristiky-v-1__slide-main .swiper-button-next {
+  position: absolute;
   flex: 0 0 auto;
   display: flex !important;
   align-items: center;
@@ -177,6 +178,15 @@
     width: 26px;
     height: 26px;
   }
+}
+.harakteristiky-v-1__slide-main .swiper-button-prev::before, .harakteristiky-v-1__slide-main .swiper-button-next::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  z-index: 5;
 }
 .harakteristiky-v-1__slide-main .swiper-button-prev::after, .harakteristiky-v-1__slide-main .swiper-button-next::after {
   content: "";
