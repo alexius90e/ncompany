@@ -1,0 +1,272 @@
+.kontakty-v-2 {
+  background-color: #2c2c2c;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 90px 0;
+
+    @include desktop {
+      padding: 80px 0;
+    }
+
+    @include desktopsm {
+      padding: 64px 0;
+    }
+
+    @include laptop {
+      padding: 58px 0;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      gap: 42px;
+      padding: 40px 0;
+    }
+  }
+
+  &__contacts {
+    flex: 0 1 607px;
+
+    @include tablet {
+      flex: 0 1 auto;
+    }
+
+    &-title {
+      margin: 0 0 40px;
+      color: #fefefe;
+
+      @include desktop {
+        margin-bottom: 36px;
+      }
+
+      @include desktopsm {
+        margin-bottom: 29px;
+      }
+
+      @include laptop {
+        margin-bottom: 24px;
+      }
+    }
+
+    &-phone {
+      margin: 0 0 32px;
+
+      @include desktop {
+        margin-bottom: 27px;
+      }
+
+      @include desktopsm {
+        margin-bottom: 23px;
+      }
+
+      @include laptop {
+        margin-bottom: 18px;
+      }
+
+      &-link {
+        display: inline-block;
+        padding: 13px 28px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        color: #fefefe;
+        text-decoration: none;
+        border-radius: 3px;
+        background-color: #ff6200;
+
+        @include desktop {
+          padding: 11px 23px;
+          font-size: 34px;
+        }
+
+        @include desktopsm {
+          padding: 9px 19px;
+          font-size: 28px;
+        }
+
+        @include laptop {
+          padding: 7px 16px;
+          font-size: 23px;
+        }
+
+        @include mobile {
+          padding: 10px 18px;
+          font-size: 22px;
+        }
+      }
+    }
+
+    &-social {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin: 0 0 32px;
+
+      @include desktop {
+        margin-bottom: 27px;
+        gap: 17px;
+      }
+
+      @include desktopsm {
+        margin-bottom: 23px;
+        gap: 14px;
+      }
+
+      @include laptop {
+        margin-bottom: 18px;
+        gap: 11px;
+      }
+
+      &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        width: 34px;
+        aspect-ratio: 1 / 1;
+
+        @include desktop {
+          width: 28px;
+        }
+
+        @include desktopsm {
+          width: 23px;
+        }
+
+        @include laptop {
+          width: 20px;
+        }
+
+        @include mobile {
+          width: 23px;
+        }
+
+        &-icon {
+          display: block;
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &-text {
+        font-weight: 600;
+        font-size: 26px;
+        letter-spacing: 0.03em;
+        color: #fefefe;
+
+        @include desktop {
+          font-size: 22px;
+        }
+
+        @include desktopsm {
+          font-size: 18px;
+        }
+
+        @include laptop {
+          font-size: 14px;
+        }
+
+        @include mobile {
+          font-size: 15px;
+        }
+      }
+    }
+
+    &-email {
+      margin: 0 0 32px;
+
+      @include desktop {
+        margin-bottom: 27px;
+      }
+
+      @include desktopsm {
+        margin-bottom: 23px;
+      }
+
+      @include laptop {
+        margin-bottom: 18px;
+      }
+
+      &-link {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        color: #fefefe;
+
+        @include desktop {
+          font-size: 22px;
+        }
+
+        @include desktopsm {
+          font-size: 18px;
+        }
+
+        @include laptop {
+          font-size: 14px;
+        }
+
+        @include mobile {
+          font-size: 15px;
+        }
+      }
+    }
+
+    &-address {
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 140%;
+      letter-spacing: 0.03em;
+      color: #fefefe;
+
+      @include desktop {
+        font-size: 22px;
+      }
+
+      @include desktopsm {
+        font-size: 18px;
+      }
+
+      @include laptop {
+        font-size: 14px;
+      }
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__map {
+    flex: 0 1 818px;
+    height: 554px;
+
+    @include desktop {
+      height: 472px;
+    }
+
+    @include desktopsm {
+      height: 365px;
+    }
+
+    @include laptop {
+      height: 264px;
+    }
+
+    @include tablet {
+      flex: 0 1 auto;
+      height: 243px;
+      width: 100%;
+    }
+
+    & * {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
