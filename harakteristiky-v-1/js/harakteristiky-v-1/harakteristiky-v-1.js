@@ -42,10 +42,12 @@ charSlideSliders.forEach((slidersContainer) => {
       slidesPerView: 3,
       freeMode: true,
       watchSlidesProgress: true,
+      allowTouchMove: false,
     });
     const mainSwiper = new Swiper(mainSliderElem, {
       spaceBetween: 20,
       loop: true,
+      allowTouchMove: false,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
