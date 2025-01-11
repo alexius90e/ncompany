@@ -159,6 +159,7 @@
   border-radius: 3px;
   background-color: rgba(254, 254, 254, 0.8);
   opacity: 1 !important;
+  -webkit-appearance: none;
 }
 @media (max-width: 1600px) {
   .harakteristiky-v-1__slide-main .swiper-button-prev, .harakteristiky-v-1__slide-main .swiper-button-next {
