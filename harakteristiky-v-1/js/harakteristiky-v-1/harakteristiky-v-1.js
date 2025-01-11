@@ -30,11 +30,12 @@ const charSlideSliders = document.querySelectorAll(
   '.harakteristiky-v-1__slider .harakteristiky-v-1__slide-sliders'
 );
 
-charSlideSliders.forEach((slidersContainer) => {
-  const mainSliderElem = slidersContainer.querySelector('.harakteristiky-v-1__slide-main.swiper');
-  const thumbsSliderElem = slidersContainer.querySelector(
-    '.harakteristiky-v-1__slide-thumbs.swiper'
-  );
+charSlideSliders.forEach((slidersElem) => {
+  const baseClassName = '.harakteristiky-v-1__slide';
+  const mainSliderElem = slidersElem.querySelector(`${baseClassName}-main .swiper`);
+  const thumbsSliderElem = slidersElem.querySelector(`${baseClassName}-thumbs.swiper`);
+  const mainSliderNext = slidersElem.querySelector(`${baseClassName}-main-controls-next`);
+  const mainSliderPrev = slidersElem.querySelector(`${baseClassName}-main-controls-prev`);
 
   if (mainSliderElem && thumbsSliderElem) {
     const thumbsSwiper = new Swiper(thumbsSliderElem, {
@@ -49,8 +50,8 @@ charSlideSliders.forEach((slidersContainer) => {
       loop: true,
       allowTouchMove: false,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: mainSliderNext,
+        prevEl: mainSliderPrev,
       },
       thumbs: {
         swiper: thumbsSwiper,
