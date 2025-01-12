@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     perPage: 3,
     gap: 20,
     perMove: 1,
+    snap: false,
     arrows: false,
     pagination: false,
     breakpoints: {
