@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
       type: 'loop',
       perPage: 1,
       perMove: 1,
+      gap: 20,
       drag: false,
       pagination: false,
     });
