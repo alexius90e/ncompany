@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     gap: 20,
     perMove: 1,
     arrows: false,
+    pagination: false,
     breakpoints: {
       360: {
         perPage: 1,
@@ -53,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
       perPage: 1,
       perMove: 1,
       drag: false,
+      pagination: false,
     });
 
     const thumbnails = new Splide(thumbsSliderElem, {
@@ -62,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
       gap: 8,
       speed: 300,
       arrows: false,
+      pagination: false,
       drag: false,
       focus: 'center',
     });
