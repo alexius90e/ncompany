@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
   const mainCharSlider = new Splide('#harakterSliderMain', {
-    // type: 'loop',
+    type: 'loop',
     perPage: 3,
     gap: 20,
     perMove: 1,
-    snap: false,
+    // snap: false,
     arrows: false,
     pagination: false,
     breakpoints: {
@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 1,
       },
       576: {
-        perPage: 1.3,
+        perPage: 1,
       },
       768: {
-        perPage: 1.6,
+        perPage: 2,
       },
       992: {
         perPage: 2,
