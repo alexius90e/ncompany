@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const mainCharSlider = new Splide('#harakterSliderMain', {
-    type: 'loop',
+    // type: 'loop',
     perPage: 3,
     gap: 20,
     perMove: 1,
