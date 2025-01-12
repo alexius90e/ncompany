@@ -1,7 +1,7 @@
 const charMainSwiper = new Swiper('.harakteristiky-v-1__slider > .swiper', {
   spaceBetween: 20,
   slidesPerView: 1,
-  loop: true,
+  // loop: true,
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -47,7 +47,7 @@ charSlideSliders.forEach((slidersElem) => {
     });
     const mainSwiper = new Swiper(mainSliderElem, {
       spaceBetween: 20,
-      loop: true,
+      // loop: true,
       allowTouchMove: false,
       navigation: {
         nextEl: mainSliderNext,
