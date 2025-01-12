@@ -39,6 +39,7 @@ charSlideSliders.forEach((slidersElem) => {
 
   if (mainSliderElem && thumbsSliderElem) {
     const thumbsSwiper = new Swiper(thumbsSliderElem, {
+      loop: true,
       spaceBetween: 8,
       slidesPerView: 3,
       freeMode: true,
