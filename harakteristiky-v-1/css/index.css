@@ -48,7 +48,8 @@
     display: none;
   }
 }
-.harakteristiky-v-1__controls-prev, .harakteristiky-v-1__controls-next {
+.harakteristiky-v-1__controls-prev,
+.harakteristiky-v-1__controls-next {
   flex: 0 0 auto;
   display: flex !important;
   align-items: center;
@@ -61,29 +62,34 @@
   background-color: rgba(254, 254, 254, 0.8);
 }
 @media (max-width: 1600px) {
-  .harakteristiky-v-1__controls-prev, .harakteristiky-v-1__controls-next {
+  .harakteristiky-v-1__controls-prev,
+  .harakteristiky-v-1__controls-next {
     width: 34px;
   }
 }
 @media (max-width: 1300px) {
-  .harakteristiky-v-1__controls-prev, .harakteristiky-v-1__controls-next {
+  .harakteristiky-v-1__controls-prev,
+  .harakteristiky-v-1__controls-next {
     width: 27px;
   }
 }
-.harakteristiky-v-1__controls-prev::before, .harakteristiky-v-1__controls-next::before {
-  content: "";
+.harakteristiky-v-1__controls-prev::before,
+.harakteristiky-v-1__controls-next::before {
+  content: '';
   display: block;
   width: 16px;
   aspect-ratio: 1/1;
   background: url(../images/harakteristiky-v-1/prev.svg) center/cover no-repeat;
 }
 @media (max-width: 1600px) {
-  .harakteristiky-v-1__controls-prev::before, .harakteristiky-v-1__controls-next::before {
+  .harakteristiky-v-1__controls-prev::before,
+  .harakteristiky-v-1__controls-next::before {
     width: 14px;
   }
 }
 @media (max-width: 1300px) {
-  .harakteristiky-v-1__controls-prev::before, .harakteristiky-v-1__controls-next::before {
+  .harakteristiky-v-1__controls-prev::before,
+  .harakteristiky-v-1__controls-next::before {
     width: 10px;
   }
 }
@@ -150,7 +156,8 @@
     height: 201px;
   }
 }
-.harakteristiky-v-1__slide-main-controls-prev, .harakteristiky-v-1__slide-main-controls-next {
+.harakteristiky-v-1__slide-main-controls-prev,
+.harakteristiky-v-1__slide-main-controls-next {
   position: absolute;
   top: 50%;
   z-index: 20;
@@ -164,30 +171,37 @@
   border: 2px solid #8e8e93;
   border-radius: 3px;
   background-color: rgba(254, 254, 254, 0.8);
-  transform: translateY(-50%);
-  opacity: 1;
+  transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  opacity: 0.7;
 }
 @media (max-width: 1600px) {
-  .harakteristiky-v-1__slide-main-controls-prev, .harakteristiky-v-1__slide-main-controls-next {
+  .harakteristiky-v-1__slide-main-controls-prev,
+  .harakteristiky-v-1__slide-main-controls-next {
     width: 34px;
     height: 34px;
     border: 1px solid #8e8e93;
   }
 }
 @media (max-width: 1300px) {
-  .harakteristiky-v-1__slide-main-controls-prev, .harakteristiky-v-1__slide-main-controls-next {
+  .harakteristiky-v-1__slide-main-controls-prev,
+  .harakteristiky-v-1__slide-main-controls-next {
     width: 28px;
     height: 28px;
   }
 }
 @media (max-width: 576px) {
-  .harakteristiky-v-1__slide-main-controls-prev, .harakteristiky-v-1__slide-main-controls-next {
+  .harakteristiky-v-1__slide-main-controls-prev,
+  .harakteristiky-v-1__slide-main-controls-next {
     width: 26px;
     height: 26px;
   }
 }
-.harakteristiky-v-1__slide-main-controls-prev::before, .harakteristiky-v-1__slide-main-controls-next::before {
-  content: "";
+.harakteristiky-v-1__slide-main-controls-prev::before,
+.harakteristiky-v-1__slide-main-controls-next::before {
+  content: '';
   position: absolute;
   top: -4px;
   left: -4px;
@@ -195,20 +209,23 @@
   bottom: -4px;
   z-index: 5;
 }
-.harakteristiky-v-1__slide-main-controls-prev::after, .harakteristiky-v-1__slide-main-controls-next::after {
-  content: "";
+.harakteristiky-v-1__slide-main-controls-prev::after,
+.harakteristiky-v-1__slide-main-controls-next::after {
+  content: '';
   display: block;
   width: 16px;
   aspect-ratio: 1/1;
   background: url(../images/harakteristiky-v-1/prev.svg) center/cover no-repeat;
 }
 @media (max-width: 1600px) {
-  .harakteristiky-v-1__slide-main-controls-prev::after, .harakteristiky-v-1__slide-main-controls-next::after {
+  .harakteristiky-v-1__slide-main-controls-prev::after,
+  .harakteristiky-v-1__slide-main-controls-next::after {
     width: 14px;
   }
 }
 @media (max-width: 1300px) {
-  .harakteristiky-v-1__slide-main-controls-prev::after, .harakteristiky-v-1__slide-main-controls-next::after {
+  .harakteristiky-v-1__slide-main-controls-prev::after,
+  .harakteristiky-v-1__slide-main-controls-next::after {
     width: 10px;
   }
 }
