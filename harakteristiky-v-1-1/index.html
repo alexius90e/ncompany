@@ -7,8 +7,15 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+      defer
+    ></script>
     <script type="module" src="./js/harakteristiky-v-1/harakteristiky-v-1.js" defer></script>
   </head>
 
@@ -25,417 +32,314 @@
         </div>
 
         <div class="harakteristiky-v-1__slider">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="harakteristiky-v-1__slide">
-                  <div class="harakteristiky-v-1__slide-sliders">
+          <section id="harakterSliderMain" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="harakteristiky-v-1__slide" id="harakteristikySlide1">
                     <div class="harakteristiky-v-1__slide-main">
-                      <div class="swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                          </div>
+                      <section class="splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                          </ul>
                         </div>
-                      </div>
-
-                      <div class="harakteristiky-v-1__slide-main-controls">
-                        <div class="harakteristiky-v-1__slide-main-controls-next"></div>
-                        <div class="harakteristiky-v-1__slide-main-controls-prev"></div>
-                      </div>
+                      </section>
                     </div>
 
-                    <div class="harakteristiky-v-1__slide-thumbs swiper" thumbsSlider="">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                    <div class="harakteristiky-v-1__slide-thumbs">
+                      <section class="splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                          </ul>
                         </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                        </div>
-                      </div>
+                      </section>
+                    </div>
+
+                    <div class="harakteristiky-v-1__slide-content">
+                      <h3 class="harakteristiky-v-1__slide-title">BMW X5, 2022</h3>
+
+                      <ul class="harakteristiky-v-1__slide-info">
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Страна:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">Германия</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Год выпуска:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">2022</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Пробег:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">180 000 км</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Двигатель:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">238 л.с.</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">
+                            Коробка передач:
+                          </span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">Автомат</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Привод:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">Полный</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">
+                            Цена в России:
+                          </span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">7 000 000 ₽</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">
+                            Цена импорта «под ключ»:
+                          </span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">5 200 000 ₽</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Экономия:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">1 800 000 ₽</b>
+                        </li>
+                      </ul>
                     </div>
                   </div>
+                </li>
 
-                  <div class="harakteristiky-v-1__slide-content">
-                    <h3 class="harakteristiky-v-1__slide-title">BMW X5, 2022</h3>
-
-                    <ul class="harakteristiky-v-1__slide-info">
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Страна:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">Германия</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Год выпуска:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">2022</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Пробег:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">180 000 км</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Двигатель:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">238 л.с.</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Коробка передач:</span
-                        >
-                        <b class="harakteristiky-v-1__slide-info-item-value">Автомат</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Привод:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">Полный</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Цена в России:
-                        </span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">7 000 000 ₽</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Цена импорта «под ключ»:</span
-                        >
-                        <b class="harakteristiky-v-1__slide-info-item-value">5 200 000 ₽</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Экономия:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">1 800 000 ₽</b>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="harakteristiky-v-1__slide">
-                  <div class="harakteristiky-v-1__slide-sliders">
+                <li class="splide__slide">
+                  <div class="harakteristiky-v-1__slide" id="harakteristikySlide1">
                     <div class="harakteristiky-v-1__slide-main">
-                      <div class="swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                          </div>
+                      <section class="splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                          </ul>
                         </div>
-                      </div>
-
-                      <div class="harakteristiky-v-1__slide-main-controls">
-                        <div class="harakteristiky-v-1__slide-main-controls-next"></div>
-                        <div class="harakteristiky-v-1__slide-main-controls-prev"></div>
-                      </div>
+                      </section>
                     </div>
 
-                    <div class="harakteristiky-v-1__slide-thumbs swiper" thumbsSlider="">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                    <div class="harakteristiky-v-1__slide-thumbs">
+                      <section class="splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                          </ul>
                         </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                        </div>
-                      </div>
+                      </section>
+                    </div>
+
+                    <div class="harakteristiky-v-1__slide-content">
+                      <h3 class="harakteristiky-v-1__slide-title">BMW X5, 2022</h3>
+
+                      <ul class="harakteristiky-v-1__slide-info">
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Страна:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">Германия</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Год выпуска:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">2022</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Пробег:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">180 000 км</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Двигатель:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">238 л.с.</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">
+                            Коробка передач:
+                          </span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">Автомат</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Привод:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">Полный</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">
+                            Цена в России:
+                          </span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">7 000 000 ₽</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">
+                            Цена импорта «под ключ»:
+                          </span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">5 200 000 ₽</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Экономия:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">1 800 000 ₽</b>
+                        </li>
+                      </ul>
                     </div>
                   </div>
+                </li>
 
-                  <div class="harakteristiky-v-1__slide-content">
-                    <h3 class="harakteristiky-v-1__slide-title">BMW X5, 2022</h3>
-
-                    <ul class="harakteristiky-v-1__slide-info">
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Страна:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">Германия</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Год выпуска:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">2022</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Пробег:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">180 000 км</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Двигатель:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">238 л.с.</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Коробка передач:</span
-                        >
-                        <b class="harakteristiky-v-1__slide-info-item-value">Автомат</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Привод:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">Полный</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Цена в России:
-                        </span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">7 000 000 ₽</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Цена импорта «под ключ»:</span
-                        >
-                        <b class="harakteristiky-v-1__slide-info-item-value">5 200 000 ₽</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Экономия:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">1 800 000 ₽</b>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="harakteristiky-v-1__slide">
-                  <div class="harakteristiky-v-1__slide-sliders">
+                <li class="splide__slide">
+                  <div class="harakteristiky-v-1__slide" id="harakteristikySlide1">
                     <div class="harakteristiky-v-1__slide-main">
-                      <div class="swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                          </div>
+                      <section class="splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                          </ul>
                         </div>
-                      </div>
-
-                      <div class="harakteristiky-v-1__slide-main-controls">
-                        <div class="harakteristiky-v-1__slide-main-controls-next"></div>
-                        <div class="harakteristiky-v-1__slide-main-controls-prev"></div>
-                      </div>
+                      </section>
                     </div>
 
-                    <div class="harakteristiky-v-1__slide-thumbs swiper" thumbsSlider="">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                    <div class="harakteristiky-v-1__slide-thumbs">
+                      <section class="splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
+                            </li>
+                            <li class="splide__slide">
+                              <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
+                            </li>
+                          </ul>
                         </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="harakteristiky-v-1__slide-content">
-                    <h3 class="harakteristiky-v-1__slide-title">BMW X5, 2022</h3>
-
-                    <ul class="harakteristiky-v-1__slide-info">
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Страна:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">Германия</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Год выпуска:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">2022</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Пробег:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">180 000 км</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Двигатель:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">238 л.с.</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Коробка передач:</span
-                        >
-                        <b class="harakteristiky-v-1__slide-info-item-value">Автомат</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Привод:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">Полный</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Цена в России:
-                        </span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">7 000 000 ₽</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Цена импорта «под ключ»:</span
-                        >
-                        <b class="harakteristiky-v-1__slide-info-item-value">5 200 000 ₽</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Экономия:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">1 800 000 ₽</b>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="harakteristiky-v-1__slide">
-                  <div class="harakteristiky-v-1__slide-sliders">
-                    <div class="harakteristiky-v-1__slide-main">
-                      <div class="swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="harakteristiky-v-1__slide-main-controls">
-                        <div class="harakteristiky-v-1__slide-main-controls-next"></div>
-                        <div class="harakteristiky-v-1__slide-main-controls-prev"></div>
-                      </div>
+                      </section>
                     </div>
 
-                    <div class="harakteristiky-v-1__slide-thumbs swiper" thumbsSlider="">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-3.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-1.jpg" alt="car" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="./images/harakteristiky-v-1/car-2.jpg" alt="car" />
-                        </div>
-                      </div>
+                    <div class="harakteristiky-v-1__slide-content">
+                      <h3 class="harakteristiky-v-1__slide-title">BMW X5, 2022</h3>
+
+                      <ul class="harakteristiky-v-1__slide-info">
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Страна:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">Германия</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Год выпуска:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">2022</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Пробег:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">180 000 км</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Двигатель:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">238 л.с.</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">
+                            Коробка передач:
+                          </span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">Автомат</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Привод:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">Полный</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">
+                            Цена в России:
+                          </span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">7 000 000 ₽</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">
+                            Цена импорта «под ключ»:
+                          </span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">5 200 000 ₽</b>
+                        </li>
+                        <li class="harakteristiky-v-1__slide-info-item">
+                          <span class="harakteristiky-v-1__slide-info-item-name">Экономия:</span>
+                          <b class="harakteristiky-v-1__slide-info-item-value">1 800 000 ₽</b>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-
-                  <div class="harakteristiky-v-1__slide-content">
-                    <h3 class="harakteristiky-v-1__slide-title">BMW X5, 2022</h3>
-
-                    <ul class="harakteristiky-v-1__slide-info">
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Страна:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">Германия</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Год выпуска:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">2022</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Пробег:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">180 000 км</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Двигатель:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">238 л.с.</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Коробка передач:</span
-                        >
-                        <b class="harakteristiky-v-1__slide-info-item-value">Автомат</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Привод:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">Полный</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Цена в России:
-                        </span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">7 000 000 ₽</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name"
-                          >Цена импорта «под ключ»:</span
-                        >
-                        <b class="harakteristiky-v-1__slide-info-item-value">5 200 000 ₽</b>
-                      </li>
-                      <li class="harakteristiky-v-1__slide-info-item">
-                        <span class="harakteristiky-v-1__slide-info-item-name">Экономия:</span>
-                        <b class="harakteristiky-v-1__slide-info-item-value">1 800 000 ₽</b>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </section>

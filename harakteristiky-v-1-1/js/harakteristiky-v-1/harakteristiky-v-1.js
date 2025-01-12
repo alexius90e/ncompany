@@ -1,64 +1,73 @@
-const charMainSwiper = new Swiper('.harakteristiky-v-1__slider > .swiper', {
-  spaceBetween: 20,
-  slidesPerView: 1,
-  loop: true,
-  cssMode: true,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    360: {
-      slidesPerView: 1.3,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 48,
-    },
-    992: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-  },
-  navigation: {
-    nextEl: '.harakteristiky-v-1__controls-next',
-    prevEl: '.harakteristiky-v-1__controls-prev',
-  },
-});
-
-const charSlideSliders = document.querySelectorAll(
-  '.harakteristiky-v-1__slider .harakteristiky-v-1__slide-sliders'
-);
-
-charSlideSliders.forEach((slidersElem) => {
-  const baseClassName = '.harakteristiky-v-1__slide';
-  const mainSliderElem = slidersElem.querySelector(`${baseClassName}-main .swiper`);
-  const thumbsSliderElem = slidersElem.querySelector(`${baseClassName}-thumbs.swiper`);
-  const mainSliderNext = slidersElem.querySelector(`${baseClassName}-main-controls-next`);
-  const mainSliderPrev = slidersElem.querySelector(`${baseClassName}-main-controls-prev`);
-
-  if (mainSliderElem && thumbsSliderElem) {
-    const thumbsSwiper = new Swiper(thumbsSliderElem, {
-      spaceBetween: 8,
-      slidesPerView: 3,
-      freeMode: true,
-      watchSlidesProgress: true,
-      allowTouchMove: false,
-      cssMode: true,
-    });
-    const mainSwiper = new Swiper(mainSliderElem, {
-      spaceBetween: 20,
-      loop: true,
-      allowTouchMove: false,
-      navigation: {
-        nextEl: mainSliderNext,
-        prevEl: mainSliderPrev,
+document.addEventListener('DOMContentLoaded', function () {
+  const mainCharSlider = new Splide('#harakterSliderMain', {
+    type: 'loop',
+    perPage: 3,
+    gap: 20,
+    perMove: 1,
+    arrows: false,
+    breakpoints: {
+      360: {
+        perPage: 1,
       },
-      thumbs: {
-        swiper: thumbsSwiper,
+      576: {
+        perPage: 1.3,
       },
-      cssMode: true,
+      768: {
+        perPage: 1.6,
+      },
+      992: {
+        perPage: 2,
+      },
+      2560: {
+        perPage: 3,
+      },
+    },
+  });
+
+  mainCharSlider.mount();
+
+  const mainCharSliderNext = document.querySelector('.harakteristiky-v-1__controls-next');
+  const mainCharSliderPrev = document.querySelector('.harakteristiky-v-1__controls-prev');
+
+  if (mainCharSliderNext)
+    mainCharSliderNext.addEventListener('click', () => {
+      mainCharSlider.go('>');
     });
-  }
+
+  if (mainCharSliderPrev)
+    mainCharSliderPrev.addEventListener('click', () => {
+      mainCharSlider.go('<');
+    });
+
+  const charSlides = document.querySelectorAll(
+    '.harakteristiky-v-1__slider .harakteristiky-v-1__slide'
+  );
+
+  charSlides.forEach((slidersElem) => {
+    const baseClassName = '.harakteristiky-v-1__slide';
+    const mainSliderElem = slidersElem.querySelector(`${baseClassName}-main .splide`);
+    const thumbsSliderElem = slidersElem.querySelector(`${baseClassName}-thumbs .splide`);
+
+    const main = new Splide(mainSliderElem, {
+      type: 'loop',
+      perPage: 1,
+      perMove: 1,
+      drag: false,
+    });
+
+    const thumbnails = new Splide(thumbsSliderElem, {
+      type: 'loop',
+      perPage: 3,
+      perMove: 1,
+      gap: 8,
+      speed: 300,
+      arrows: false,
+      drag: false,
+      focus: 'center',
+    });
+
+    main.sync(thumbnails);
+    main.mount();
+    thumbnails.mount();
+  });
 });
