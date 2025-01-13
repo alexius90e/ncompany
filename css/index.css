@@ -1,6 +1,10 @@
 .harakteristiky-v-1__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   gap: 32px;
   margin-bottom: 60px;
 }
@@ -28,9 +32,15 @@
   margin-bottom: 0px !important;
 }
 .harakteristiky-v-1__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex: 0 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   gap: 32px;
 }
 @media (max-width: 1600px) {
@@ -49,12 +59,21 @@
   }
 }
 .harakteristiky-v-1__controls-prev, .harakteristiky-v-1__controls-next {
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 40px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   aspect-ratio: 1/1;
   border: 2px solid #8e8e93;
   border-radius: 3px;
@@ -88,14 +107,17 @@
   }
 }
 .harakteristiky-v-1__controls-next::before {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .harakteristiky-v-1__slider {
   display: block;
   overflow: hidden;
 }
 .harakteristiky-v-1__slider > .swiper > .swiper-wrapper > .swiper-slide {
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
 }
 .harakteristiky-v-1__slide {
@@ -120,52 +142,48 @@
   }
 }
 .harakteristiky-v-1__slide-main .swiper-slide {
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
 }
 .harakteristiky-v-1__slide-main .swiper-slide > img {
   display: block;
   max-width: 100%;
   width: 100%;
-  height: 320px;
-  object-fit: cover;
-}
-@media (max-width: 1600px) {
-  .harakteristiky-v-1__slide-main .swiper-slide > img {
-    height: 273px;
-  }
-}
-@media (max-width: 1300px) {
-  .harakteristiky-v-1__slide-main .swiper-slide > img {
-    height: 218px;
-  }
-}
-@media (max-width: 992px) {
-  .harakteristiky-v-1__slide-main .swiper-slide > img {
-    height: 236px;
-  }
-}
-@media (max-width: 576px) {
-  .harakteristiky-v-1__slide-main .swiper-slide > img {
-    height: 201px;
-  }
+  aspect-ratio: 49/32;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .harakteristiky-v-1__slide-main-controls-prev, .harakteristiky-v-1__slide-main-controls-next {
   position: absolute;
   top: 50%;
   z-index: 20;
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 40px;
   height: 40px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 2px solid #8e8e93;
   border-radius: 3px;
   background-color: rgba(254, 254, 254, 0.8);
   transform: translate3d(0, -50%, 0);
-  opacity: 0.7;
+  -webkit-transform: translate3d(0, -50%, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  opacity: 0.5;
+  cursor: pointer;
 }
 @media (max-width: 1600px) {
   .harakteristiky-v-1__slide-main-controls-prev, .harakteristiky-v-1__slide-main-controls-next {
@@ -189,10 +207,10 @@
 .harakteristiky-v-1__slide-main-controls-prev::before, .harakteristiky-v-1__slide-main-controls-next::before {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
   z-index: 5;
 }
 .harakteristiky-v-1__slide-main-controls-prev::after, .harakteristiky-v-1__slide-main-controls-next::after {
@@ -209,7 +227,7 @@
 }
 @media (max-width: 1300px) {
   .harakteristiky-v-1__slide-main-controls-prev::after, .harakteristiky-v-1__slide-main-controls-next::after {
-    width: 10px;
+    width: 12px;
   }
 }
 .harakteristiky-v-1__slide-main-controls-prev {
@@ -219,10 +237,13 @@
   right: 14px;
 }
 .harakteristiky-v-1__slide-main-controls-next::after {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .harakteristiky-v-1__slide-thumbs .swiper-slide {
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   opacity: 0.5;
 }
@@ -230,28 +251,9 @@
   display: block;
   max-width: 100%;
   width: 100%;
-  height: 101px;
-  object-fit: cover;
-}
-@media (max-width: 1600px) {
-  .harakteristiky-v-1__slide-thumbs .swiper-slide > img {
-    height: 86px;
-  }
-}
-@media (max-width: 1300px) {
-  .harakteristiky-v-1__slide-thumbs .swiper-slide > img {
-    height: 68px;
-  }
-}
-@media (max-width: 992px) {
-  .harakteristiky-v-1__slide-thumbs .swiper-slide > img {
-    height: 74px;
-  }
-}
-@media (max-width: 576px) {
-  .harakteristiky-v-1__slide-thumbs .swiper-slide > img {
-    height: 63px;
-  }
+  aspect-ratio: 49/32;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .harakteristiky-v-1__slide-thumbs .swiper-slide-thumb-active {
   opacity: 1;
@@ -305,8 +307,13 @@
   }
 }
 .harakteristiky-v-1__slide-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 21px;
   margin: 0;
   padding: 0;
