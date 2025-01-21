@@ -20,9 +20,14 @@ function countVidyContentMaxHeight() {
     const delta = 100;
     container.style.maxHeight = `${maxColumnHeight + delta + maxColumnElemsCount * gap}px`;
   }
+
+  console.log('object');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.vidy-variant-2__card').forEach((_, index) => {
+    setTimeout(() => countVidyContentMaxHeight(), index * 100);
+  });
   countVidyContentMaxHeight();
 });
 
