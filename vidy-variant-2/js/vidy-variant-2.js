@@ -22,6 +22,8 @@ function countVidyContentMaxHeight() {
   }
 }
 
-window.addEventListener('resize', () => countVidyContentMaxHeight());
+document.addEventListener('DOMContentLoaded', () => {
+  countVidyContentMaxHeight();
+});
 
-countVidyContentMaxHeight();
+window.addEventListener('resize', () => countVidyContentMaxHeight());
