@@ -877,6 +877,12 @@
 .perv-ekr-v-6__callback-form-button:active {
   background-color: #f5ac7f;
 }
+.perv-ekr-v-6__callback-agreement {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+  color: #b3b3b3;
+}
 .perv-ekr-v-6__callback-agreement-text {
   font-weight: 400;
   font-size: 14px;
