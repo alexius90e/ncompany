@@ -752,25 +752,27 @@
     }
 
     &-agreement {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 110%;
-      color: #b3b3b3;
-
-      @include desktop {
-        font-size: 13px;
-      }
-
-      @include desktopsm {
-        font-size: 10px;
-      }
-
-      @include laptop {
-        font-size: 9px;
-      }
-
-      @include tablet {
+      & > * {
+        font-weight: 400;
         font-size: 14px;
+        line-height: 110%;
+        color: #b3b3b3;
+
+        @include desktop {
+          font-size: 13px;
+        }
+
+        @include desktopsm {
+          font-size: 10px;
+        }
+
+        @include laptop {
+          font-size: 9px;
+        }
+
+        @include tablet {
+          font-size: 14px;
+        }
       }
 
       &-link {
