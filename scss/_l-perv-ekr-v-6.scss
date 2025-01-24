@@ -580,16 +580,6 @@
       }
 
       @include desktopsm {
-        margin: 0 0 6px;
-        font-size: 17px;
-      }
-
-      @include laptop {
-        margin: 0 0 5px;
-        font-size: 14px;
-      }
-
-      @include mobile {
         margin: 0 0 9px;
         font-size: 18px;
       }
@@ -746,7 +736,7 @@
     }
 
     &-agreement {
-      & > * {
+      &-text {
         font-weight: 400;
         font-size: 14px;
         line-height: 110%;
@@ -758,9 +748,17 @@
       }
 
       &-link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 110%;
+        color: #b3b3b3;
         color: #b3b3b3;
         text-decoration: underline;
         text-decoration-skip-ink: none;
+
+        @include desktop {
+          font-size: 13px;
+        }
       }
     }
   }

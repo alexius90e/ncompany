@@ -701,18 +701,6 @@
 }
 @media (max-width: 1300px) {
   .perv-ekr-v-6__callback-title {
-    margin: 0 0 6px;
-    font-size: 17px;
-  }
-}
-@media (max-width: 992px) {
-  .perv-ekr-v-6__callback-title {
-    margin: 0 0 5px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .perv-ekr-v-6__callback-title {
     margin: 0 0 9px;
     font-size: 18px;
   }
@@ -889,22 +877,31 @@
 .perv-ekr-v-6__callback-form-button:active {
   background-color: #f5ac7f;
 }
-.perv-ekr-v-6__callback-agreement > * {
+.perv-ekr-v-6__callback-agreement-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 110%;
   color: #b3b3b3;
 }
 @media (max-width: 1600px) {
-  .perv-ekr-v-6__callback-agreement > * {
+  .perv-ekr-v-6__callback-agreement-text {
     font-size: 13px;
   }
 }
 .perv-ekr-v-6__callback-agreement-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+  color: #b3b3b3;
   color: #b3b3b3;
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+}
+@media (max-width: 1600px) {
+  .perv-ekr-v-6__callback-agreement-link {
+    font-size: 13px;
+  }
 }
 .perv-ekr-v-6__modal-callback {
   position: fixed;
