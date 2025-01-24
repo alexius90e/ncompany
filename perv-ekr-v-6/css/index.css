@@ -896,29 +896,29 @@
 .perv-ekr-v-6__callback-form-button:active {
   background-color: #f5ac7f;
 }
-.perv-ekr-v-6__callback-agreement {
+.perv-ekr-v-6__callback-agreement > * {
   font-weight: 400;
   font-size: 14px;
   line-height: 110%;
   color: #b3b3b3;
 }
 @media (max-width: 1600px) {
-  .perv-ekr-v-6__callback-agreement {
+  .perv-ekr-v-6__callback-agreement > * {
     font-size: 13px;
   }
 }
 @media (max-width: 1300px) {
-  .perv-ekr-v-6__callback-agreement {
+  .perv-ekr-v-6__callback-agreement > * {
     font-size: 10px;
   }
 }
 @media (max-width: 992px) {
-  .perv-ekr-v-6__callback-agreement {
+  .perv-ekr-v-6__callback-agreement > * {
     font-size: 9px;
   }
 }
 @media (max-width: 768px) {
-  .perv-ekr-v-6__callback-agreement {
+  .perv-ekr-v-6__callback-agreement > * {
     font-size: 14px;
   }
 }
