@@ -995,13 +995,15 @@
     }
 
     &-agreement {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 110%;
-      color: #b3b3b3;
+      & > * {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 110%;
+        color: #b3b3b3;
 
-      @include desktop {
-        font-size: 13px;
+        @include desktop {
+          font-size: 13px;
+        }
       }
 
       &-link {
