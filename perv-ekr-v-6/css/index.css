@@ -1176,14 +1176,14 @@
 .perv-ekr-v-6__modal-callback-form-button:active {
   background-color: #f5ac7f;
 }
-.perv-ekr-v-6__modal-callback-agreement {
+.perv-ekr-v-6__modal-callback-agreement > * {
   font-weight: 400;
   font-size: 14px;
   line-height: 110%;
   color: #b3b3b3;
 }
 @media (max-width: 1600px) {
-  .perv-ekr-v-6__modal-callback-agreement {
+  .perv-ekr-v-6__modal-callback-agreement > * {
     font-size: 13px;
   }
 }
