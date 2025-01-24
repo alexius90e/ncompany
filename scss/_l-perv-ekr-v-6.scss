@@ -705,7 +705,6 @@
           font-size: 15px;
         }
 
-        
         &:user-invalid {
           border-color: #ff0000;
         }
@@ -814,13 +813,13 @@
       transition: transform ease-in-out 0.4s;
 
       @include desktop {
-        padding: 48px 30px 40px 36px;
+        padding: 48px 30px 40px;
         max-width: 396px;
       }
 
       @include desktopsm {
         max-width: 356px;
-        padding: 43px 26px 33px 33px;
+        padding: 43px 30px 33px;
       }
 
       @include mobile {
@@ -835,7 +834,12 @@
     }
 
     &-content {
-      max-height: calc(100dvh);
+      max-height: calc(96vh - 42px * 2);
+      overflow: auto;
+
+      @include desktop {
+        max-height: calc(96vh - 30px * 2);
+      }
     }
 
     &-title {
@@ -1080,7 +1084,7 @@
       @include mobile {
         max-width: calc(100dvw - 30px);
         width: 360px;
-        padding: 38px 24px 31px;
+        padding: 38px 38px 31px;
       }
 
       .active & {
@@ -1089,7 +1093,20 @@
     }
 
     &-content {
-      max-height: calc(100dvh);
+      max-height: calc(96vh - 42px * 2);
+      overflow: auto;
+
+      @include desktop {
+        max-height: calc(96vh - 34px * 2);
+      }
+
+      @include desktopsm {
+        max-height: calc(96vh - 30px * 2);
+      }
+
+      @include mobile {
+        max-height: calc(96vh - 38px * 2);
+      }
     }
 
     &-title {
