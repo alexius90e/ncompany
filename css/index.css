@@ -33,8 +33,12 @@
   display: block;
 }
 .contacts-v-1__branch {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 60px;
   padding: 80px 0;
   border-top: 1px solid #c9c9c9;
@@ -59,7 +63,8 @@
 }
 @media (max-width: 768px) {
   .contacts-v-1__branch {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media (max-width: 576px) {
@@ -73,7 +78,9 @@
   border-bottom: none;
 }
 .contacts-v-1__branch-wrapper {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .contacts-v-1__branch-title {
   margin: 0 0 40px;
@@ -101,8 +108,11 @@
   }
 }
 .contacts-v-1__branch-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 40px 44px;
 }
 @media (max-width: 1600px) {
@@ -121,21 +131,29 @@
   }
 }
 .contacts-v-1__branch-content-block {
-  flex: 0 0 calc(50% - 22px);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 22px);
+          flex: 0 0 calc(50% - 22px);
 }
 @media (max-width: 1600px) {
   .contacts-v-1__branch-content-block {
-    flex: 0 0 calc(50% - 19px);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 19px);
+            flex: 0 0 calc(50% - 19px);
   }
 }
 @media (max-width: 1300px) {
   .contacts-v-1__branch-content-block {
-    flex: 0 0 calc(50% - 13px);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 13px);
+            flex: 0 0 calc(50% - 13px);
   }
 }
 @media (max-width: 992px) {
   .contacts-v-1__branch-content-block {
-    flex: 1 1 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 }
 .contacts-v-1__branch-content-block-title {
@@ -178,8 +196,11 @@
   text-decoration: none;
 }
 .contacts-v-1__branch-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
 }
 @media (max-width: 1600px) {
@@ -193,7 +214,9 @@
   }
 }
 .contacts-v-1__branch-social-link {
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   display: block;
   width: 27px;
   aspect-ratio: 1/1;
@@ -223,7 +246,9 @@
   background-image: url(../images/instagram.svg);
 }
 .contacts-v-1__branch-map {
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   display: block;
   width: 676px;
   aspect-ratio: 676/477;
