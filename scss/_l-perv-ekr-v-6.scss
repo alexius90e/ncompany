@@ -604,22 +604,16 @@
 
       @include desktop {
         margin: 0 0 22px;
-        font-size: 17px;
+        font-size: 18px;
       }
 
       @include desktopsm {
         margin: 0 0 17px;
-        font-size: 14px;
+        font-size: 16px;
       }
 
       @include laptop {
-        margin: 0 0 15px;
-        font-size: 12px;
-      }
-
-      @include mobile {
-        margin: 0 0 27px;
-        font-size: 16px;
+        font-size: 14px;
       }
     }
 
@@ -760,18 +754,6 @@
 
         @include desktop {
           font-size: 13px;
-        }
-
-        @include desktopsm {
-          font-size: 10px;
-        }
-
-        @include laptop {
-          font-size: 9px;
-        }
-
-        @include tablet {
-          font-size: 14px;
         }
       }
 

@@ -727,25 +727,18 @@
 @media (max-width: 1600px) {
   .perv-ekr-v-6__callback-description {
     margin: 0 0 22px;
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 @media (max-width: 1300px) {
   .perv-ekr-v-6__callback-description {
     margin: 0 0 17px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 992px) {
   .perv-ekr-v-6__callback-description {
-    margin: 0 0 15px;
-    font-size: 12px;
-  }
-}
-@media (max-width: 576px) {
-  .perv-ekr-v-6__callback-description {
-    margin: 0 0 27px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .perv-ekr-v-6__callback-form {
@@ -905,21 +898,6 @@
 @media (max-width: 1600px) {
   .perv-ekr-v-6__callback-agreement > * {
     font-size: 13px;
-  }
-}
-@media (max-width: 1300px) {
-  .perv-ekr-v-6__callback-agreement > * {
-    font-size: 10px;
-  }
-}
-@media (max-width: 992px) {
-  .perv-ekr-v-6__callback-agreement > * {
-    font-size: 9px;
-  }
-}
-@media (max-width: 768px) {
-  .perv-ekr-v-6__callback-agreement > * {
-    font-size: 14px;
   }
 }
 .perv-ekr-v-6__callback-agreement-link {
