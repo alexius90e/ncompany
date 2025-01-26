@@ -1,4 +1,4 @@
-const karuselFotoV1Swiper = new Swiper('.karusel-foto-v-1__slider .swiper', {
+const karuselFotoV2Swiper = new Swiper('.karusel-foto-v-2__slider .swiper', {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
@@ -12,20 +12,20 @@ const karuselFotoV1Swiper = new Swiper('.karusel-foto-v-1__slider .swiper', {
       spaceBetween: 20,
     },
     992: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 22,
     },
     1300: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 28,
     },
     1600: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 32,
     },
   },
   navigation: {
-    nextEl: '.karusel-foto-v-1__slider-controls-next',
-    prevEl: '.karusel-foto-v-1__slider-controls-prev',
+    nextEl: '.karusel-foto-v-2__slider-controls-next',
+    prevEl: '.karusel-foto-v-2__slider-controls-prev',
   },
 });

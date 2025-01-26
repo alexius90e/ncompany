@@ -1,4 +1,4 @@
-.karusel-foto-v-1 {
+.karusel-foto-v-2 {
   &__content {
     position: relative;
   }
@@ -116,7 +116,7 @@
           display: block;
           width: 16px;
           aspect-ratio: 1 / 1;
-          background: url(../images/karusel-foto-v-1/arrow-prev.svg) center / cover no-repeat;
+          background: url(../images/karusel-foto-v-2/arrow-prev.svg) center / cover no-repeat;
 
           @include desktop {
             width: 14px;
