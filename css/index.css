@@ -1,3 +1,6 @@
+.karusel-foto-v-1__content {
+  position: relative;
+}
 .karusel-foto-v-1__title {
   margin: 0 0 30px;
   padding-right: 380px;
@@ -21,7 +24,7 @@
 }
 @media (max-width: 576px) {
   .karusel-foto-v-1__title {
-    padding-right: none;
+    padding-right: 0;
     margin-bottom: 20px;
   }
 }
@@ -150,4 +153,47 @@
 .karusel-foto-v-1__slider-controls-next::before {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+@media (max-width: 576px) {
+  .karusel-foto-v-1__more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 40px 0 0;
+  }
+}
+.karusel-foto-v-1__more-button {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  margin: 0;
+  color: #355ddb;
+  border-color: #355ddb;
+}
+@media (max-width: 1300px) {
+  .karusel-foto-v-1__more-button {
+    top: 4px;
+  }
+}
+@media (max-width: 992px) {
+  .karusel-foto-v-1__more-button {
+    top: 0;
+  }
+}
+@media (max-width: 576px) {
+  .karusel-foto-v-1__more-button {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+}
+.karusel-foto-v-1__more-button:hover {
+  color: #ffffff;
+  background-color: #355ddb;
 }

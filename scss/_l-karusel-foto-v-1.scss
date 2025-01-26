@@ -1,4 +1,8 @@
 .karusel-foto-v-1 {
+  &__content {
+    position: relative;
+  }
+
   &__title {
     margin: 0 0 30px;
     padding-right: 380px;
@@ -18,7 +22,7 @@
     }
 
     @include mobile {
-      padding-right: none;
+      padding-right: 0;
       margin-bottom: 20px;
     }
   }
@@ -134,6 +138,43 @@
         &::before {
           transform: rotate(180deg);
         }
+      }
+    }
+  }
+
+  &__more {
+    @include mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0 0;
+    }
+
+    &-button {
+      position: absolute;
+      top: 9px;
+      right: 0;
+      margin: 0;
+      color: #355ddb;
+      border-color: #355ddb;
+
+      @include desktopsm {
+        top: 4px;
+      }
+
+      @include laptop {
+        top: 0;
+      }
+
+      @include mobile {
+        position: relative;
+        top: auto;
+        right: auto;
+      }
+
+      &:hover {
+        color: #ffffff;
+        background-color: #355ddb;
       }
     }
   }
