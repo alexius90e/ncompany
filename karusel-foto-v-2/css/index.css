@@ -1,0 +1,199 @@
+.karusel-foto-v-2__content {
+  position: relative;
+}
+.karusel-foto-v-2__title {
+  margin: 0 0 30px;
+  padding-right: 380px;
+}
+@media (max-width: 1600px) {
+  .karusel-foto-v-2__title {
+    margin-bottom: 26px;
+  }
+}
+@media (max-width: 1300px) {
+  .karusel-foto-v-2__title {
+    margin-bottom: 24px;
+    padding-right: 340px;
+  }
+}
+@media (max-width: 992px) {
+  .karusel-foto-v-2__title {
+    margin-bottom: 22px;
+    padding-right: 290px;
+  }
+}
+@media (max-width: 576px) {
+  .karusel-foto-v-2__title {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.karusel-foto-v-2__description {
+  max-width: 975px;
+  margin: 0 0 59px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 130%;
+  color: #000;
+}
+@media (max-width: 1600px) {
+  .karusel-foto-v-2__description {
+    max-width: 750px;
+    margin-bottom: 54px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1300px) {
+  .karusel-foto-v-2__description {
+    max-width: 624px;
+    margin-bottom: 49px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .karusel-foto-v-2__description {
+    max-width: 518px;
+    margin-bottom: 44px;
+  }
+}
+@media (max-width: 576px) {
+  .karusel-foto-v-2__description {
+    max-width: none;
+    margin-bottom: 57px;
+    font-size: 18px;
+  }
+}
+.karusel-foto-v-2__slider {
+  position: relative;
+  padding: 0 80px;
+}
+@media (max-width: 1600px) {
+  .karusel-foto-v-2__slider {
+    padding: 0 74px;
+  }
+}
+@media (max-width: 1300px) {
+  .karusel-foto-v-2__slider {
+    padding: 0 52px;
+  }
+}
+@media (max-width: 576px) {
+  .karusel-foto-v-2__slider {
+    padding: 0 50px;
+  }
+}
+.karusel-foto-v-2__slider-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.karusel-foto-v-2__slider-controls-prev, .karusel-foto-v-2__slider-controls-next {
+  position: absolute;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  aspect-ratio: 1/1;
+  border: 2px solid #8e8e93;
+  border-radius: 3px;
+  background-color: #ffffff;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+@media (max-width: 1600px) {
+  .karusel-foto-v-2__slider-controls-prev, .karusel-foto-v-2__slider-controls-next {
+    width: 34px;
+  }
+}
+@media (max-width: 1300px) {
+  .karusel-foto-v-2__slider-controls-prev, .karusel-foto-v-2__slider-controls-next {
+    width: 28px;
+  }
+}
+@media (max-width: 992px) {
+  .karusel-foto-v-2__slider-controls-prev, .karusel-foto-v-2__slider-controls-next {
+    border-width: 1px;
+  }
+}
+.karusel-foto-v-2__slider-controls-prev::before, .karusel-foto-v-2__slider-controls-next::before {
+  content: "";
+  display: block;
+  width: 16px;
+  aspect-ratio: 1/1;
+  background: url(../images/karusel-foto-v-2/arrow-prev.svg) center/cover no-repeat;
+}
+@media (max-width: 1600px) {
+  .karusel-foto-v-2__slider-controls-prev::before, .karusel-foto-v-2__slider-controls-next::before {
+    width: 14px;
+  }
+}
+@media (max-width: 1300px) {
+  .karusel-foto-v-2__slider-controls-prev::before, .karusel-foto-v-2__slider-controls-next::before {
+    width: 12px;
+  }
+}
+.karusel-foto-v-2__slider-controls-prev {
+  left: 0;
+}
+.karusel-foto-v-2__slider-controls-next {
+  right: 0;
+}
+.karusel-foto-v-2__slider-controls-next::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+@media (max-width: 576px) {
+  .karusel-foto-v-2__more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 40px 0 0;
+  }
+}
+.karusel-foto-v-2__more-button {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  margin: 0;
+  color: #355ddb;
+  border-color: #355ddb;
+}
+@media (max-width: 1300px) {
+  .karusel-foto-v-2__more-button {
+    top: 4px;
+  }
+}
+@media (max-width: 992px) {
+  .karusel-foto-v-2__more-button {
+    top: 0;
+  }
+}
+@media (max-width: 576px) {
+  .karusel-foto-v-2__more-button {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+}
+.karusel-foto-v-2__more-button:hover {
+  color: #ffffff;
+  background-color: #355ddb;
+}
