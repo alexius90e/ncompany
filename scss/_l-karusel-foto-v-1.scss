@@ -1,0 +1,140 @@
+.karusel-foto-v-1 {
+  &__title {
+    margin: 0 0 30px;
+    padding-right: 380px;
+
+    @include desktop {
+      margin-bottom: 26px;
+    }
+
+    @include desktopsm {
+      margin-bottom: 24px;
+      padding-right: 340px;
+    }
+
+    @include laptop {
+      margin-bottom: 22px;
+      padding-right: 290px;
+    }
+
+    @include mobile {
+      padding-right: none;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    max-width: 975px;
+    margin: 0 0 59px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 130%;
+    color: #000;
+
+    @include desktop {
+      max-width: 750px;
+      margin-bottom: 54px;
+      font-size: 24px;
+    }
+
+    @include desktopsm {
+      max-width: 624px;
+      margin-bottom: 49px;
+      font-size: 20px;
+    }
+
+    @include laptop {
+      max-width: 518px;
+      margin-bottom: 44px;
+    }
+
+    @include mobile {
+      max-width: none;
+      margin-bottom: 57px;
+      font-size: 18px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    padding: 0 80px;
+
+    @include desktop {
+      padding: 0 74px;
+    }
+
+    @include desktopsm {
+      padding: 0 52px;
+    }
+
+    @include mobile {
+      padding: 0 50px;
+    }
+
+    &-image {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    &-controls {
+      &-prev,
+      &-next {
+        position: absolute;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        box-sizing: border-box;
+        aspect-ratio: 1 / 1;
+        border: 2px solid #8e8e93;
+        border-radius: 3px;
+        background-color: #ffffff;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        @include desktop {
+          width: 34px;
+        }
+
+        @include desktopsm {
+          width: 28px;
+        }
+
+        @include laptop {
+          border-width: 1px;
+        }
+
+        &::before {
+          content: '';
+          display: block;
+          width: 16px;
+          aspect-ratio: 1 / 1;
+          background: url(../images/karusel-foto-v-1/arrow-prev.svg) center / cover no-repeat;
+
+          @include desktop {
+            width: 14px;
+          }
+
+          @include desktopsm {
+            width: 12px;
+          }
+        }
+      }
+
+      &-prev {
+        left: 0;
+      }
+
+      &-next {
+        right: 0;
+
+        &::before {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
