@@ -84,8 +84,9 @@
 }
 .karusel-foto-v-1__slider-image {
   display: block;
+  max-width: 100%;
   width: 100%;
-  aspect-ratio: 1/1;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
