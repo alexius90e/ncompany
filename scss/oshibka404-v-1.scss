@@ -31,7 +31,6 @@
     font-size: 36px;
     text-align: center;
     color: #fff;
-    background-color: #355ddb;
 
     @include desktopsm {
       margin: 0 auto 11px;
@@ -41,6 +40,17 @@
     @include mobile {
       margin: 0 auto 24px;
       font-size: 22px;
+    }
+
+    &-text {
+      display: inline;
+      padding: 2px 18px;
+      white-space: pre-wrap;
+      background-color: #355ddb;
+
+      @include laptop {
+        padding: 2px;
+      }
     }
   }
 
