@@ -31,7 +31,6 @@
   font-size: 36px;
   text-align: center;
   color: #fff;
-  background-color: #355ddb;
 }
 @media (max-width: 1300px) {
   .oshibka404-v-1__description {
@@ -43,6 +42,17 @@
   .oshibka404-v-1__description {
     margin: 0 auto 24px;
     font-size: 22px;
+  }
+}
+.oshibka404-v-1__description-text {
+  display: inline;
+  padding: 2px 18px;
+  white-space: pre-wrap;
+  background-color: #355ddb;
+}
+@media (max-width: 992px) {
+  .oshibka404-v-1__description-text {
+    padding: 2px;
   }
 }
 .oshibka404-v-1__additions {
