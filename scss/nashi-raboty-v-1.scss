@@ -1,0 +1,84 @@
+@import './b-mixins.scss';
+
+.nashi-raboty-v-1 {
+  &__gallery {
+    & .swiper {
+      &-button {
+        &-prev,
+        &-next {
+          position: absolute;
+          top: 50%;
+          display: block;
+          width: 42px;
+          height: 42px;
+          background: url(../images/nashi-raboty-v-1/prev-button.svg) center/cover no-repeat;
+          background-color: #ffffff;
+          transition: filter ease-in-out 0.2s;
+          cursor: pointer;
+
+          @include desktop {
+            width: 38px;
+            height: 38px;
+          }
+
+          @include desktopsm {
+            width: 32px;
+            height: 32px;
+          }
+
+          &::after {
+            display: none;
+          }
+        }
+
+        &-prev {
+          left: 0;
+          transform: translate3d(0, -50%, 0);
+        }
+        &-next {
+          right: 0;
+          transform: translate3d(0, -50%, 0) rotate(180deg);
+        }
+      }
+    }
+
+    &-slide {
+      display: flex;
+      align-items: stretch;
+      gap: 20px;
+      padding: 0 60px;
+
+      @include laptop {
+        flex-wrap: wrap;
+      }
+    }
+
+    &-card {
+      flex: 0 0 calc(100% / 4 - 20px / 4 * 3);
+      max-width: calc(100% / 4 - 20px / 4 * 3);
+
+      @include laptop {
+        flex: 0 0 calc(100% / 2 - 20px / 2);
+        max-width: calc(100% / 2 - 20px / 2);
+      }
+
+      &-figure {
+        margin: 0;
+
+        &-image {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      &-text {
+        padding: 10px 6px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.nashi-raboty-v-1__gallery .swiper-button-prev, .nashi-raboty-v-1__gallery .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 42px;
+  height: 42px;
+  background: url(../images/nashi-raboty-v-1/prev-button.svg) center/cover no-repeat;
+  background-color: #ffffff;
+  -webkit-transition: -webkit-filter ease-in-out 0.2s;
+  transition: -webkit-filter ease-in-out 0.2s;
+  transition: filter ease-in-out 0.2s;
+  transition: filter ease-in-out 0.2s, -webkit-filter ease-in-out 0.2s;
+  cursor: pointer;
+}
+@media (max-width: 1600px) {
+  .nashi-raboty-v-1__gallery .swiper-button-prev, .nashi-raboty-v-1__gallery .swiper-button-next {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media (max-width: 1300px) {
+  .nashi-raboty-v-1__gallery .swiper-button-prev, .nashi-raboty-v-1__gallery .swiper-button-next {
+    width: 32px;
+    height: 32px;
+  }
+}
+.nashi-raboty-v-1__gallery .swiper-button-prev::after, .nashi-raboty-v-1__gallery .swiper-button-next::after {
+  display: none;
+}
+.nashi-raboty-v-1__gallery .swiper-button-prev {
+  left: 0;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+}
+.nashi-raboty-v-1__gallery .swiper-button-next {
+  right: 0;
+  -webkit-transform: translate3d(0, -50%, 0) rotate(180deg);
+          transform: translate3d(0, -50%, 0) rotate(180deg);
+}
+.nashi-raboty-v-1__gallery-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 20px;
+  padding: 0 60px;
+}
+@media (max-width: 992px) {
+  .nashi-raboty-v-1__gallery-slide {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.nashi-raboty-v-1__gallery-card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(25% - 15px);
+          flex: 0 0 calc(25% - 15px);
+  max-width: calc(25% - 15px);
+}
+@media (max-width: 992px) {
+  .nashi-raboty-v-1__gallery-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 10px);
+            flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
+.nashi-raboty-v-1__gallery-card-figure {
+  margin: 0;
+}
+.nashi-raboty-v-1__gallery-card-figure-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.nashi-raboty-v-1__gallery-card-text {
+  padding: 10px 6px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000;
+}
