@@ -48,8 +48,20 @@
       gap: 20px;
       padding: 0 60px;
 
+      @include desktop {
+        padding: 0 43px;
+      }
+
+      @include desktopsm {
+        padding: 0 37px;
+      }
+
       @include laptop {
         flex-wrap: wrap;
+      }
+
+      @include mobile {
+        gap: 15px 8px;
       }
     }
 
@@ -60,6 +72,11 @@
       @include laptop {
         flex: 0 0 calc(100% / 2 - 20px / 2);
         max-width: calc(100% / 2 - 20px / 2);
+      }
+
+      @include mobile {
+        flex: 0 0 calc(100% / 2 - 8px / 2);
+        max-width: calc(100% / 2 - 8px / 2);
       }
 
       &-figure {
@@ -78,6 +95,11 @@
         font-size: 16px;
         line-height: 140%;
         color: #000;
+
+        @include mobile {
+          padding: 7px 4px 0;
+          font-size: 15px;
+        }
       }
     }
   }
